@@ -87,6 +87,25 @@ def generate_html(content):
             color: #a8dadc;
             font-weight: bold;
         }}
+        .summary {{
+            color: #555;
+            font-style: italic;
+            border-left: 3px solid #457b9d;
+            padding-left: 12px;
+            margin: 10px 0;
+            background: #e9f5ff;
+            padding: 10px;
+            border-radius: 4px;
+        }}
+        .news-link {{
+            color: #457b9d;
+            text-decoration: none;
+            border-bottom: 1px dashed #457b9d;
+        }}
+        .news-link:hover {{
+            color: #e63946;
+            border-bottom-style: solid;
+        }}
         hr {{
             border: none;
             border-top: 2px solid #eee;
@@ -114,9 +133,23 @@ def generate_html(content):
         points = item.get("points", [])
         sources_list = item.get("sources", [])
 
+        # 添加概括（如果有）
+        summary = item.get("summary", "")
+
+        # 添加标题链接（如果有）
+        url = item.get("url", "")
+        if url:
+            title_html = f'<a href="{url}" target="_blank" class="news-link">{idx}. {title}</a>'
+        else:
+            title_html = f"{idx}. {title}"
+
+        # 添加概括（如果有）
+        summary = item.get("summary", "")
+
         html += f"""
     <div class="news-item">
-        <h3>{idx}. {title}</h3>
+        <h3>{title_html}</h3>
+        {f'<p class="summary">{summary}</p>' if summary else ''}
         {f'<p><span class="source">来源: {", ".join(sources_list)}</span></p>' if sources_list else ''}
 """
         if points:

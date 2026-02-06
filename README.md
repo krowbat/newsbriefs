@@ -2,6 +2,8 @@
 
 自动生成和发布新闻简报到 GitHub Pages。
 
+**新功能：** 支持为每条新闻添加内容概括！详见 [摘要指南](SUMMARY_GUIDE.md)
+
 ## 使用方法
 
 ### 方式1：通过 JSON 文件
@@ -15,6 +17,8 @@
   "items": [
     {
       "title": "爱泼斯坦文件持续发酵",
+      "url": "https://www.bbc.com/news/example-url",
+      "summary": "涉及安德鲁王子和高官的新细节浮出水面，引发公众对政府透明度的质疑。",
       "sources": ["BBC", "CNN"],
       "points": [
         "第二位受害者称2010年被送往英国与安德鲁王子会面",
@@ -24,6 +28,8 @@
     },
     {
       "title": "俄乌冲突升级",
+      "url": "https://www.bbc.com/news/example-url-2",
+      "summary": "俄罗斯袭击民用设施，造成平民伤亡，冲突进一步升级。",
       "sources": ["Guardian"],
       "points": [
         "俄罗斯无人机袭击乌克兰矿工巴士，至少12人死亡",

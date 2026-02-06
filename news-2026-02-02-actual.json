@@ -1,0 +1,95 @@
+{
+  "date": "2026-02-02",
+  "sources": ["BBC", "CBC"],
+  "items": [
+    {
+      "title": "英国前部长曼德尔森因爱泼斯坦事件辞去工党职务",
+      "url": "https://www.bbc.com/news/articles/cn8jm2vpve1o",
+      "summary": "前内阁部长彼得·曼德尔森宣布退出工党，以避免因其与已故性犯罪者的关系进一步损害政党形象。",
+      "sources": ["BBC"],
+      "points": [
+        "曼德尔森表示不想造成进一步的尴尬",
+        "美国司法部发布的数百万文件中提到了他的名字",
+        "他此前否认对爱泼斯坦的活动知情"
+      ]
+    },
+    {
+      "title": "第68届格莱美奖颁奖典礼举行",
+      "url": "https://www.bbc.com/news/articles/czx1z0qwy77o",
+      "summary": "第68届格莱美奖在洛杉矶举行，比莉·艾利什获年度歌曲奖，肯德里克·拉马尔创说唱艺人纪录。",
+      "sources": ["BBC", "CBC"],
+      "points": [
+        "比莉·艾利什（Billie Eilish）获年度歌曲奖",
+        "肯德里克·拉马尔（Kendrick Lamar）打破说唱艺人获奖纪录",
+        "奥利维亚·迪恩（Olivia Dean）获最佳新人奖",
+        "坏痞兔（Bad Bunny）在获奖时喊出'ICE滚出去'"
+      ]
+    },
+    {
+      "title": "乌克兰矿工巴士遭俄军袭击，至少12人死亡",
+      "url": "https://www.bbc.com/news/articles/cdre7g2je63o",
+      "summary": "俄罗斯无人机袭击乌克兰一辆运送矿工的巴士，造成至少12人死亡，15人受伤。",
+      "sources": ["BBC", "CBC"],
+      "points": [
+        "袭击发生在周日，地点靠近顿巴斯地区",
+        "另有15名矿工受伤",
+        "乌克兰官员谴责俄罗斯针对民用设施的袭击"
+      ]
+    },
+    {
+      "title": "特朗普宣布肯尼迪中心将关闭两年进行翻修",
+      "url": "https://www.bbc.com/news/articles/c1ev53zyww2o",
+      "summary": "特朗普总统宣布华盛顿肯尼迪表演艺术中心将关闭两年，此前多位艺术家因中心更名后抵制演出。",
+      "sources": ["BBC"],
+      "points": [
+        "中心更名为特朗普肯尼迪中心引发争议",
+        "多位艺术家取消演出以示抗议",
+        "翻新期间将暂停所有表演活动"
+      ]
+    },
+    {
+      "title": "被ICE拘留的5岁儿童和父亲获释返回明尼苏达",
+      "url": "https://www.cbc.ca/news/world/liam-ramos-and-father-return-minnesota-9.7069972",
+      "summary": "被美国移民执法局拘留的5岁男童和父亲在法院命令下获释，已返回明尼苏达州家中。",
+      "sources": ["CBC"],
+      "points": [
+        "拉莫斯父子在明尼苏达被ICE拘留",
+        "已被转移至德克萨斯州拘留设施",
+        "法官下令立即释放他们",
+        "民主党议员卡斯特罗办公室确认两人已返回家乡"
+      ]
+    },
+    {
+      "title": "挪威首相同意公主因爱泼斯坦问题判断失误",
+      "url": "https://www.bbc.com/news/articles/c1508llzw4qo",
+      "summary": "挪威首相约纳斯·加尔·斯托雷表示，同意王室对梅特-玛丽公主与爱泼斯坦关系发表的判断失误声明。",
+      "sources": ["BBC"],
+      "points": [
+        "挪威王室公主承认与爱泼斯坦有接触历史",
+        "公主称自己判断失误",
+        "首相公开支持王室声明"
+      ]
+    },
+    {
+      "title": "加拿大哈密尔顿士兵在拉脱维亚身亡",
+      "url": "https://www.cbc.ca/news/canada/hamilton/sebastian-halmagean-canadian-armed-forces-9.7070059",
+      "summary": "一名来自安大略省哈密尔顿的加拿大军队士兵在拉脱维亚执行任务时死亡，警方正在调查死因。",
+      "sources": ["CBC"],
+      "points": [
+        "死者名为塞巴斯蒂安·哈尔马根，37岁",
+        "他在拉脱维亚执行军事任务时死亡",
+        "父亲表示儿子对自己身为加拿大军人感到无比自豪"
+      ]
+    },
+    {
+      "title": "BC省道森克里克谋杀案三人被控一级谋杀",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/3-men-charged-dawson-creek-bc-murder-9.7070056",
+      "summary": "三名男子在BC省道森克里克谋杀案中被指控一级谋杀，受害者于2023年新年前夕被发现身亡。",
+      "sources": ["CBC"],
+      "points": [
+        "受害者罗伯特·吉巴夫37岁",
+        "2023年12月31日被发现死亡",
+        "三人被控一级谋杀罪"
+      ]
+    }
+  ]}

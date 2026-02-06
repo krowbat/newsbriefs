@@ -1,0 +1,69 @@
+{
+  "date": "2026-02-05",
+  "sources": ["BBC", "CBC Edmonton", "The Guardian"],
+  "items": [
+    {
+      "title": "英国首相为爱泼斯坦受害者道歉",
+      "url": "https://www.bbc.com/news/live/czx3lq460n6t",
+      "source": "BBC",
+      "category": "政治",
+      "summary": "斯塔默首相因任命曼德尔森勋爵为美国大使并向其撒谎而向爱泼斯坦受害者道歉。保守党和自由民主党要求对首相进行不信任投票。"
+    },
+    {
+      "title": "美国与伊朗同意周五在阿曼举行核谈判",
+      "url": "https://www.bbc.com/news/articles/cvgj2knp4d9o",
+      "source": "BBC",
+      "category": "国际",
+      "summary": "两国曾因谈判地点和参数存在分歧，谈判一度陷入危险境地。现在双方已达成协议，将于周五在阿曼开始谈判。"
+    },
+    {
+      "title": "乌克兰称55,000名士兵阵亡",
+      "url": "https://www.bbc.com/news/articles/cvgn2dzwd1do",
+      "source": "BBC",
+      "category": "军事",
+      "summary": "泽连斯基总统表示，有大量人员被官方列为失踪，实际死亡人数可能远高于此。俄罗斯入侵乌克兰的战争仍在持续。"
+    },
+    {
+      "title": "NBC主持人母亲被绑架，呼吁释放",
+      "url": "https://www.bbc.com/news/articles/c2e18wvrx9xo",
+      "source": "BBC",
+      "category": "美国",
+      "summary": "美国新闻主播萨凡纳·格思里恳求绑架者归还她84岁的母亲南希。老人没有携带维持生命所需的药物。"
+    },
+    {
+      "title": "阿尔伯塔省执政党2025年筹集930万美元捐款",
+      "url": "https://www.cbc.ca/news/canada/edmonton/donations-alberta-political-parties-9.7074895",
+      "source": "CBC Edmonton",
+      "category": "本地新闻",
+      "summary": "联合保守党表示2025年筹集了930万美元，其中包括选区协会收集的捐款。选举阿尔伯塔网站显示，企业捐款总额为76.6万美元。"
+    },
+    {
+      "title": "福布斯将埃德蒙顿油人队列为2026年NHL最盈利球队",
+      "url": "https://www.cbc.ca/player/play/video/9.7070202",
+      "source": "CBC Edmonton",
+      "category": "体育",
+      "summary": "埃德蒙顿油人队被福布斯评为2026年NHL最盈利的球队。这对埃德蒙顿球迷是个好消息。"
+    },
+    {
+      "title": "爱泼斯坦文件揭示班农试图影响欧洲政治",
+      "url": "https://www.theguardian.com/international",
+      "source": "The Guardian",
+      "category": "国际调查",
+      "summary": "特朗普前顾问班农告诉爱泼斯坦，他在2019年欧洲选举前专注于为勒庞和萨尔维尼筹款。"
+    },
+    {
+      "title": "乌克兰与俄罗斯在阿联酋的和平谈判第二天无突破",
+      "url": "https://www.theguardian.com/international",
+      "source": "The Guardian",
+      "category": "和平谈判",
+      "summary": "双方就囚犯交换达成共识，但基辅和莫斯科数月来的最重要接触仍有许多工作要做。"
+    },
+    {
+      "title": "埃德蒙顿市议会讨论恢复氯化钙用于道路除雪",
+      "url": "https://www.cbc.ca/player/play/video/9.7074764",
+      "source": "CBC Edmonton",
+      "category": "市政新闻",
+      "summary": "埃德蒙顿市议会将讨论恢复使用氯化钙来处理积雪的道路。此前该做法因环境问题暂停。"
+    }
+  ]
+}
