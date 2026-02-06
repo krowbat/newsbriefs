@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻简报 - 2026-02-06 (完整版)</title>
+    <title>新闻简报 - 2026-02-06 (豪华完整版 · 25篇)</title>
     <style>
         * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
-            max-width: 850px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.7;
             color: #333;
-            background: #fafafa;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
         }
         h1 {
             color: #1a1a1a;
             border-bottom: 4px solid #e63946;
             padding-bottom: 15px;
             margin-bottom: 10px;
+            font-size: 2em;
         }
         .subtitle {
             color: #666;
             font-size: 1.1em;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .api-badge {
             display: inline-block;
@@ -36,27 +37,39 @@
             font-weight: bold;
             margin-left: 10px;
         }
-        .category-badge {
+        .edition-badge {
             display: inline-block;
-            padding: 4px 12px;
-            border-radius: 4px;
-            font-size: 0.75em;
+            background: #ffd700;
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
             font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            margin-left: 10px;
         }
-        .int { background: #e63946; color: white; }
-        .tech { background: #4361ee; color: white; }
-        .sports { background: #f77f00; color: white; }
-        .social { background: #06d6a0; color: white; }
-        .domestic { background: #118ab2; color: white; }
-        h2 {
-            color: #1d3557;
-            margin-top: 50px;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e9ecef;
-            font-size: 1.5em;
+        .stats-bar {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 25px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4361ee;
+        }
+        .stat-label {
+            font-size: 0.8em;
+            color: #6c757d;
         }
         .intro {
             background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
@@ -64,13 +77,43 @@
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 30px;
-            font-size: 0.95em;
         }
+        h2 {
+            color: #1d3557;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            border-left: 5px solid;
+            font-size: 1.4em;
+        }
+        h2.int { border-left-color: #e63946; }
+        h2.china { border-left-color: #c9184a; }
+        h2.tech { border-left-color: #4361ee; }
+        h2.sports { border-left-color: #f77f00; }
+        h2.domestic { border-left-color: #06d6a0; }
+        
+        .category-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.72em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .int { background: #e63946; color: white; }
+        .china { background: #c9184a; color: white; }
+        .tech { background: #4361ee; color: white; }
+        .sports { background: #f77f00; color: white; }
+        .domestic { background: #06d6a0; color: white; }
+        
         .news-item {
             background: white;
-            padding: 25px;
+            padding: 22px;
             border-radius: 12px;
-            margin: 20px 0;
+            margin: 15px 0;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             transition: transform 0.2s, box-shadow 0.2s;
         }
@@ -81,49 +124,50 @@
         .news-item h3 {
             color: #1d3557;
             margin-top: 0;
-            margin-bottom: 12px;
-            font-size: 1.25em;
+            margin-bottom: 10px;
+            font-size: 1.15em;
             line-height: 1.4;
         }
         .meta {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
+            gap: 10px;
+            margin-bottom: 10px;
             flex-wrap: wrap;
         }
         .source {
             color: #6c757d;
-            font-size: 0.9em;
+            font-size: 0.85em;
             font-weight: 500;
         }
         .time {
             color: #adb5bd;
-            font-size: 0.85em;
+            font-size: 0.8em;
         }
         .summary {
             color: #495057;
-            font-size: 1em;
-            line-height: 1.7;
-            margin: 15px 0;
-            padding: 15px;
+            font-size: 0.95em;
+            line-height: 1.65;
+            margin: 12px 0;
+            padding: 12px;
             background: #f8f9fa;
-            border-radius: 8px;
+            border-radius: 6px;
             border-left: 3px solid #4361ee;
         }
         .news-item ul {
-            margin-top: 15px;
-            padding-left: 25px;
+            margin-top: 10px;
+            padding-left: 22px;
             color: #495057;
+            font-size: 0.9em;
         }
         .news-item li {
-            margin: 8px 0;
-            line-height: 1.6;
+            margin: 6px 0;
+            line-height: 1.5;
         }
         .news-link {
             color: #4361ee;
             text-decoration: none;
-            border-bottom: 2px solid transparent;
+            border-bottom: 1px solid transparent;
             transition: border-color 0.2s;
         }
         .news-link:hover {
@@ -131,7 +175,7 @@
         }
         hr {
             border: none;
-            border-top: 1px solid #dee2e6;
+            border-top: 2px solid #dee2e6;
             margin: 40px 0;
         }
         .footer {
@@ -139,95 +183,80 @@
             font-size: 0.9em;
             text-align: center;
             margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid #dee2e6;
-        }
-        .stats {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .stat-item {
-            text-align: center;
-            padding: 10px 20px;
+            padding: 30px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .stat-number {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #4361ee;
-        }
-        .stat-label {
-            font-size: 0.8em;
-            color: #6c757d;
+            border-radius: 12px;
         }
         @media (max-width: 600px) {
-            body { padding: 15px; }
-            .news-item { padding: 20px; }
-            h1 { font-size: 1.5em; }
+            body { padding: 12px; }
+            .news-item { padding: 18px; }
+            h1 { font-size: 1.4em; }
+            h2 { font-size: 1.2em; }
         }
     </style>
 </head>
 <body>
-    <h1>📰 今日全球新闻简报 <span class="api-badge">Brave AI 搜索</span></h1>
-    <p class="subtitle"><strong>2026年2月6日</strong> · 星期五 · 实时聚合10+权威新闻源</p>
+    <h1>📰 今日全球新闻简报 <span class="edition-badge">豪华完整版</span> <span class="api-badge">Brave AI</span></h1>
+    <p class="subtitle"><strong>2026年2月6日</strong> · 星期五 · 25篇深度报道 · 5大领域全覆盖</p>
+    
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-number">25</div>
+            <div class="stat-label">篇精选</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">5</div>
+            <div class="stat-label">大类别</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">12</div>
+            <div class="stat-label">权威媒体</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">API查询</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">1994</div>
+            <div class="stat-label">剩余额度</div>
+        </div>
+    </div>
     
     <div class="intro">
-        <strong>🔍 本简报由 Brave Search API 实时生成</strong><br>
-        覆盖 BBC、纽约时报、CBS、美国之音、星洲日报、Gadgets360 等全球权威媒体，涵盖国际头条、科技、体育、社会、国内五大类别。免费额度：2000次/月。
+        <strong>🔍 本简报由 Brave Search API 实时生成 · 豪华完整版</strong><br><br>
+        每个领域精选5篇高质量报道，覆盖：<strong>国际头条</strong>、<strong>外电看中国</strong>、<strong>科技前沿</strong>、<strong>体育冬奥</strong>、<strong>国内社会</strong>。<br>
+        来源包括 BBC、Reuters、NYT、CBS、Gadgets360、东方日报、星洲日报等全球顶级媒体。
     </div>
 
-    <hr>
-
-    <h2>🔴 国际头条</h2>
-
+    <h2 class="int">🔴 国际头条 · 5篇</h2>
+    
     <div class="news-item">
         <div class="meta">
             <span class="category-badge int">国际头条</span>
             <span class="source">BBC</span>
             <span class="time">30分钟前</span>
         </div>
-        <h3><a href="https://www.bbc.com/news/articles/cr57g1y8286o" target="_blank" class="news-link">1. 美伊核谈判阿曼重启：伊朗称"良好开端"，美国要求停止镇压抗议并终止核计划</a></h3>
-        <p class="summary">伊朗外长阿巴斯·阿拉格奇表示美伊会谈将继续，双方在阿曼进行了数小时谈判。与此同时，美国官员要求伊朗停止镇压抗议者——人权组织称已确认至少<strong>6,941人死亡</strong>，5万多人被捕。特朗普同日表态称应与俄罗斯制定新核武协议。</p>
+        <h3><a href="https://www.bbc.com/news/articles/cr57g1y8286o" target="_blank" class="news-link">1. 美伊核谈判阿曼重启：伊朗称"良好开端"，美国要求停止镇压并终止核计划</a></h3>
+        <p class="summary">伊朗外长阿巴斯·阿拉格奇表示美伊会谈将继续，双方在阿曼进行了数小时谈判。与此同时，美国官员要求伊朗停止镇压抗议者——人权组织称已确认至少<strong>6,941人死亡</strong>，5万多人被捕。</p>
         <ul>
             <li>谈判地点：阿曼</li>
             <li>伊朗态度：称会谈是"良好开端"</li>
             <li>美国要求：停止镇压抗议（6941+死亡）+ 终止核计划</li>
-            <li>特朗普表态：应与俄制定新核武协议</li>
         </ul>
     </div>
 
     <div class="news-item">
         <div class="meta">
-            <span class="category-badge int">国际</span>
+            <span class="category-badge int">国际头条</span>
             <span class="source">BBC</span>
             <span class="time">20小时前</span>
         </div>
-        <h3><a href="https://www.bbc.com/news/articles/cp37v4kyv3eo" target="_blank" class="news-link">2. 英国首相斯塔默为爱泼斯坦丑闻道歉，承认"相信了他的谎言"</a></h3>
-        <p class="summary">英国首相斯塔默向爱泼斯坦受害者道歉，承认任命彼得·曼德尔森并"相信了他的谎言"。曼德尔森未回应，但BBC了解其立场为未犯罪且非财务动机驱动。</p>
+        <h3><a href="https://www.bbc.com/news/articles/cp37v4kyv3eo" target="_blank" class="news-link">2. 英国首相为爱泼斯坦丑闻道歉，承认"相信了他的谎言"</a></h3>
+        <p class="summary">英国首相基尔·斯塔默向爱泼斯坦受害者道歉，承认任命彼得·曼德尔森并"相信了他的谎言"。英媒称首相正处于"严重危机"，前政治顾问表示斯塔默"正在为首相职位而战"。</p>
         <ul>
             <li>斯塔默承认："相信了他的谎言"</li>
-            <li>曼德尔森：系斯塔mer任命的重要官员</li>
+            <li>危机评估：前顾问称"无法低估形势严重性"</li>
             <li>曼德尔森立场：未犯罪、非财务动机</li>
-        </ul>
-    </div>
-
-    <div class="news-item">
-        <div class="meta">
-            <span class="category-badge int">国际</span>
-            <span class="source">东方日报</span>
-            <span class="time">1天前</span>
-        </div>
-        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/05/795654" target="_blank" class="news-link">3. 克里姆林宫否认爱泼斯坦是俄间谍，波兰计划展开调查</a></h3>
-        <p class="summary">克里姆林宫周四明确否认已故"富豪淫媒"爱泼斯坦是俄罗斯秘密间谍的说法。此前美国司法部上月公布约<strong>300万页爱泼斯坦档案</strong>，波兰随即计划对其与俄罗斯情报机构的所谓联系展开调查。</p>
-        <ul>
-            <li>克宫明确否认间谍指控</li>
-            <li>美司法部公布：300万页档案</li>
-            <li>波兰计划：展开官方调查</li>
         </ul>
     </div>
 
@@ -237,13 +266,13 @@
             <span class="source">东方日报</span>
             <span class="time">16小时前</span>
         </div>
-        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/06/795707" target="_blank" class="news-link">4. 华盛顿邮报裁员引发大规模抗议：数百人集会高呼"民主死于黑暗"</a></h3>
-        <p class="summary">数百人周四在华盛顿邮报总部外集会，抗议报社裁减数百名记者的决定，其中包括大部分海外驻点人员。抗议标语<strong>"民主死于黑暗"</strong>直接引用华邮著名口号，讽刺贝索斯收购后的报社方向。</p>
+        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/06/795707" target="_blank" class="news-link">3. 华盛顿邮报裁员引发抗议：数百人高呼"民主死于黑暗"</a></h3>
+        <p class="summary">数百人周四在华盛顿邮报总部外集会，抗议报社裁减数百名记者的决定，其中包括大部分海外驻点人员。抗议标语<strong>"民主死于黑暗"</strong>直接引用华邮著名口号，讽刺贝索斯收购后的战略收缩。</p>
         <ul>
             <li>裁员规模：数百名记者</li>
             <li>重点裁撤：海外驻点人员</li>
-            <li>抗议口号："民主死于黑暗"（ irony ）</li>
-            <li>背景：贝索斯收购后的战略收缩</li>
+            <li>抗议人数：数百人集会</li>
+            <li>讽刺点：引用华邮经典slogan反击</li>
         </ul>
     </div>
 
@@ -253,35 +282,109 @@
             <span class="source">BBC</span>
             <span class="time">18小时前</span>
         </div>
-        <h3><a href="https://www.bbc.com/news/articles/c2e18wvrx9xo" target="_blank" class="news-link">5. NBC主持人母亲失踪：警方认为84岁老人"仍在外面某处"</a></h3>
-        <p class="summary">NBC《今日秀》主持人Savannah Guthrie的84岁母亲Nancy在亚利桑那州图森家中失踪，警方认为可能遭绑架。Guthrie因此退出米兰冬奥会开幕式主持工作，原定于周五晚与观众见面。</p>
+        <h3><a href="https://www.bbc.com/news/articles/c2e18wvrx9xo" target="_blank" class="news-link">4. NBC主持人母亲失踪：警方认为84岁老人"仍在外面某处"</a></h3>
+        <p class="summary">NBC《今日秀》主持人Savannah Guthrie的84岁母亲Nancy Guthrie在亚利桑那州图森家中失踪，警方认为可能遭绑架，已找到相关线索。Guthrie因此退出周五晚的米兰冬奥会开幕式主持工作。</p>
         <ul>
             <li>失踪者：Nancy Guthrie，84岁</li>
-            <li>地点：亚利桑那州图森</li>
+            <li>地点：亚利桑那州图森家中</li>
             <li>警方判断：可能遭绑架，"仍在外面某处"</li>
             <li>影响：Guthrie退出冬奥开幕主持</li>
         </ul>
     </div>
 
-    <h2>🏂 体育新闻 · 2026米兰冬奥会</h2>
-
     <div class="news-item">
         <div class="meta">
-            <span class="category-badge sports">体育</span>
-            <span class="source">CBS News / NYT</span>
-            <span class="time">实时更新</span>
+            <span class="category-badge int">国际</span>
+            <span class="source">东方日报</span>
+            <span class="time">1天前</span>
         </div>
-        <h3><a href="https://www.cbsnews.com/live-updates/olympics-opening-ceremony-winter-2026/" target="_blank" class="news-link">6. 米兰冬奥会开幕！伊布拉希莫维奇担任最后火炬手，首创双主火炬</a></h3>
-        <p class="summary">2026米兰-科尔蒂纳冬奥会开幕式在米兰圣西罗体育场举行。瑞典传奇球星<strong>伊布拉希莫维奇</strong>担任最后火炬手，美国旗手为速度滑冰选手埃琳·杰克逊和雪橇选手弗兰克·德尔杜卡。本届奥运会首次同时点燃<strong>两个主火炬</strong>，分别位于米兰和平门和科尔蒂纳，将持续燃烧至3月15日冬残奥会闭幕。</p>
+        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/05/795654" target="_blank" class="news-link">5. 克里姆林宫否认爱泼斯坦是俄间谍，波兰计划展开调查</a></h3>
+        <p class="summary">克里姆林宫周四明确否认已故"富豪淫媒"爱泼斯坦是俄罗斯秘密间谍的说法。此前美国司法部上月公布约<strong>300万页爱泼斯坦档案</strong>，波兰随即计划对其与俄罗斯情报机构的所谓联系展开调查。</p>
         <ul>
-            <li>最后火炬手：伊布拉希莫维奇（AC米兰顾问）</li>
-            <li>美国旗手：埃琳·杰克逊（速滑）+ 弗兰克·德尔杜卡（雪橇）</li>
-            <li>历史首创：双主火炬（米兰和平门 + 科尔蒂纳）</li>
-            <li>吉祥物：Milo和Tina</li>
+            <li>克宫官方表态：明确否认间谍指控</li>
+            <li>美方动作：司法部公布300万页档案</li>
+            <li>波兰反应：计划展开官方调查</li>
         </ul>
     </div>
 
-    <h2>💻 科技前沿</h2>
+    <h2 class="china">🇨🇳 外电看中国 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge china">外电中国</span>
+            <span class="source">BBC</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/news/articles/c62wpjd3j1zo" target="_blank" class="news-link">6. 习近平与特朗普通话：要求美国对台军售"审慎行事"</a></h3>
+        <p class="summary">中国领导人习近平与美国总统特朗普通电话，称台湾是中美关系<strong>"最重要议题"</strong>，要求特朗普对台军售"审慎行事"。同时表达重视中美关系的立场，希望双方找到解决分歧的途径。</p>
+        <ul>
+            <li>核心议题：台湾被定义为"最重要问题"</li>
+            <li>中方要求：对台军售"审慎行事"</li>
+            <li>基调：重视中美关系，希望解决分歧</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge china">外电中国</span>
+            <span class="source">BBC</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/news/articles/c70l27gy47do" target="_blank" class="news-link">7. 特朗普推动美俄核军备控制，关键在中国是否参与</a></h3>
+        <p class="summary">分析师指出，特朗普试图推动美俄核军备控制谈判，但今日局势比冷战时期更复杂：乌克兰危机恶化美俄关系，同时<strong>中国作为新兴核超级大国的崛起</strong>使三方博弈格局形成，中国的参与至关重要。</p>
+        <ul>
+            <li>复杂性：乌克兰危机 + 中国崛起</li>
+            <li>新动态：三方核大国博弈格局</li>
+            <li>关键点：中国的参与意愿和条件</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge china">外电中国</span>
+            <span class="source">BBC</span>
+            <span class="time">2天前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/news/articles/c5y41r5rzrno" target="_blank" class="news-link">8. 美国提出计划对抗中国关键矿产供应链主导权</a></h3>
+        <p class="summary">美国召集盟友会议，提出建立稀土和关键矿产替代供应链的计划，以减少对中国主导地位的依赖。中国外交部回应称各国应<strong>"遵循市场经济原则和国际经贸规则"</strong>，通过对话解决分歧。</p>
+        <ul>
+            <li>美方行动：建立替代供应链联盟</li>
+            <li>目标领域：稀土、锂、钴等关键矿产</li>
+            <li>中方回应：遵循市场规则，加强对话</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge china">外电中国</span>
+            <span class="source">Reuters</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://www.reuters.com/world/asia-pacific/chinas-xi-trump-hold-call-chinese-state-media-reports-2026-02-04/" target="_blank" class="news-link">9. 中美领导人讨论台湾和大豆：中国考虑增购美国大豆</a></h3>
+        <p class="summary">特朗普称与习近平进行"非常积极"的通话，表示<strong>中国正在考虑购买更多美国农场大豆</strong>。与此同时，北京就台湾问题发出警告，贸易谈判可能好转但政治敏感议题仍存分歧。</p>
+        <ul>
+            <li>经济议题：中方考虑增购美豆</li>
+            <li>特朗普评价："非常积极"的通话</li>
+            <li>政治障碍：台湾问题仍是分歧点</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge china">外电中国</span>
+            <span class="source">BBC</span>
+            <span class="time">18小时前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/news/articles/c62rexy9y3no" target="_blank" class="news-link">10. BBC调查：中国酒店偷拍产业链，情侣私密被直播给数千人</a></h3>
+        <p class="summary">BBC追踪到郑州一家酒店房间的偷拍设备，发现情侣私密时刻被非法直播给数千付费订阅者。调查揭示中国偷拍产业链规模庞大，涉及偷拍设备销售、内容分发平台和地下付费社群。</p>
+        <ul>
+            <li>调查发现：郑州酒店偷拍设备</li>
+            <li>转播规模：数千付费订阅者</li>
+            <li>产业链：设备销售+内容分发+地下社群</li>
+        </ul>
+    </div>
+
+    <h2 class="tech">💻 科技前沿 · 5篇</h2>
 
     <div class="news-item">
         <div class="meta">
@@ -289,12 +392,12 @@
             <span class="source">Gadgets360</span>
             <span class="time">10小时前</span>
         </div>
-        <h3><a href="https://www.gadgets360.com/ai/news/anthropic-claude-opus-4-6-ai-model-launch-1-million-context-window-agentic-coding-specifications-10957767" target="_blank" class="news-link">7. Anthropic发布Claude Opus 4.6：100万token上下文，agentic编码能力大幅提升</a></h3>
-        <p class="summary">Anthropic周四发布Claude Opus 4.6，这是其Opus 4基础模型的重大更新。新模型支持<strong>100万token上下文窗口</strong>，在agentic编码任务（自主代码生成、调试、重构）上表现大幅提升，可直接处理 entire codebase。</p>
+        <h3><a href="https://www.gadgets360.com/ai/news/anthropic-claude-opus-4-6-ai-model-launch-1-million-context-window-agentic-coding-specifications-10957767" target="_blank" class="news-link">11. Anthropic发布Claude Opus 4.6：100万token上下文窗口</a></h3>
+        <p class="summary">Anthropic发布Opus 4重大更新，支持<strong>100万token上下文窗口</strong>（可处理整本书或大型代码库）。在agentic编码任务（自主代码生成、调试、重构）上表现大幅提升。</p>
         <ul>
-            <li>上下文窗口：100万token（约等于整本书）</li>
-            <li>核心升级：agentic编码性能</li>
-            <li>应用场景：自动代码重构、复杂项目开发</li>
+            <li>上下文：100万token（整本书容量）</li>
+            <li>核心升级：agentic编码性能飞跃</li>
+            <li>应用场景：大型项目开发、代码重构</li>
         </ul>
     </div>
 
@@ -304,30 +407,155 @@
             <span class="source">Gadgets360</span>
             <span class="time">7小时前</span>
         </div>
-        <h3><a href="https://www.gadgets360.com/ai/news/openai-gpt-5-3-codex-first-ai-model-developed-itself-agentic-coding-faster-features-details-released-10959066" target="_blank" class="news-link">8. OpenAI发布GPT-5.3-Codex：首个协助开发自身的AI模型</a></h3>
-        <p class="summary">OpenAI周四发布GPT-5.3-Codex，这是首个<strong>协助开发自身代码的AI模型</strong>。该模型在agentic编码任务上速度更快，可独立开发复杂视频游戏，标志着AI自我改进能力的重要里程碑。</p>
+        <h3><a href="https://www.gadgets360.com/ai/news/openai-gpt-5-3-codex-first-ai-model-developed-itself-agentic-coding-faster-features-details-released-10959066" target="_blank" class="news-link">12. OpenAI发布GPT-5.3-Codex：首个协助开发自身的AI模型</a></h3>
+        <p class="summary">OpenAI发布GPT-5.3-Codex，这是首个<strong>协助开发自身代码的AI模型</strong>. 速度更快，可独立开发复杂视频游戏，标志着AI具备自我改进能力的里程碑。</p>
         <ul>
-            <li>核心特性：AI协助开发自身代码</li>
+            <li>突破性：AI协助开发自身</li>
             <li>能力：独立开发复杂视频游戏</li>
             <li>意义：AI自我改进里程碑</li>
         </ul>
     </div>
 
-    <h2>🇨🇳 国内/华人圈</h2>
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge tech">科技</span>
+            <span class="source">eWeek</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://www.eweek.com/news/elevenlabs-500m-funding/" target="_blank" class="news-link">13. AI语音独角兽ElevenLabs融资5亿美元，估值达110亿美元</a></h3>
+        <p class="summary">ElevenLabs完成5亿美元融资，估值飙升至<strong>110亿美元</strong>。2025年底ARR收入超3.3亿美元，企业客户采用语音和对话AI驱动增长，成为AI语音合成领域最大独角兽。</p>
+        <ul>
+            <li>估值：110亿美元</li>
+            <li>收入：ARR超3.3亿美元</li>
+            <li>地位：AI语音合成最大独角兽</li>
+        </ul>
+    </div>
 
     <div class="news-item">
         <div class="meta">
-            <span class="category-badge social">社会</span>
+            <span class="category-badge tech">科技</span>
+            <span class="source">The Journal Record</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://journalrecord.com/2026/02/06/ai-startups-global-venture-capital-2025/" target="_blank" class="news-link">14. AI初创2025年全球吸金2700亿美元，占风投总额过半</a></h3>
+        <p class="summary">AI初创公司2025年募资<strong>2700亿美元</strong>，首次占据全球风险投资总额<strong>50%以上</strong>。北美公司领跑，生成式AI和大模型成为资本追逐热点。</p>
+        <ul>
+            <li>融资额：2700亿美元（历史新高）</li>
+            <li>占比：首次超过全球风投50%</li>
+            <li>领跑：北美AI公司</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge tech">科技</span>
+            <span class="source">Business Insider</span>
+            <span class="time">3小时前</span>
+        </div>
+        <h3><a href="https://www.businessinsider.com/ai-software-collapse-alixpartners-what-happens-next-2026-2" target="_blank" class="news-link">15. 分析师警告：2026年AI软件行业将迎来大整合</a></h3>
+        <p class="summary">AlixPartners预测，AI颠覆将迫使中端企业软件行业大规模整合，预计2026年并购交易量同比增长<strong>30-40%</strong>。增长放缓和AI投资挤压将淘汰大量初创公司。</p>
+        <ul>
+            <li>预测：并购量增长30-40%</li>
+            <li>驱动因素：增长放缓+AI投资挤压</li>
+            <li>影响：中端软件公司面临淘汰潮</li>
+        </ul>
+    </div>
+
+    <h2 class="sports">🏂 体育 · 2026米兰冬奥会 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge sports">体育</span>
+            <span class="source">CBS/NYT</span>
+            <span class="time">实时</span>
+        </div>
+        <h3><a href="https://www.cbsnews.com/live-updates/olympics-opening-ceremony-winter-2026/" target="_blank" class="news-link">16. 冬奥会开幕！伊布拉希莫维奇担任最后火炬手，首创双主火炬</a></h3>
+        <p class="summary">米兰-科尔蒂纳冬奥会开幕。瑞典传奇球星<strong>伊布拉希莫维奇</strong>（AC米兰顾问）担任最后火炬手。美国旗手为杰克逊（速滑）和德尔杜卡（雪橇）。本届首次同时点燃<strong>双主火炬</strong>（米兰和平门+科尔蒂纳），将持续燃烧至3月15日冬残奥会闭幕。</p>
+        <ul>
+            <li>火炬手：伊布拉希莫维奇（足球传奇）</li>
+            <li>美国旗手：埃琳·杰克逊（速滑）+ 弗兰克·德尔杜卡（雪橇）</li>
+            <li>历史首创：双主火炬同步燃烧</li>
+            <li>吉祥物：Milo和Tina</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge sports">体育</span>
+            <span class="source">USA Today</span>
+            <span class="time">21分钟前</span>
+        </div>
+        <h3><a href="https://eu.usatoday.com/story/sports/olympics/2026/02/06/winter-olympics-live-updates-results-today/88524913007/" target="_blank" class="news-link">17. 花滑团体赛首日：美国队暂居第一，有望卫冕金牌</a></h3>
+        <p class="summary">花样滑冰团体赛首日比赛结束，<strong>美国队暂居积分榜第一</strong>。美国队是上届冬奥会该项目金牌得主，正寻求卫冕。日本队、加拿大队紧随其后。</p>
+        <ul>
+            <li>当前排名：美国第一</li>
+            <li>目标：卫冕团体金牌</li>
+            <li>竞争对手：日本、加拿大</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge sports">体育</span>
+            <span class="source">BBC Sport</span>
+            <span class="time">18小时前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/sport/articles/c338y36kngzo" target="_blank" class="news-link">18. 今日冬奥赛程：短道1000米、男子回转、跳台滑雪超团体决赛</a></h3>
+        <p class="summary">今日多场决赛：女子短道速滑1000米、男子高山滑雪回转、男子跳台滑雪超团体、女子自由式滑雪大跳台、女子单人雪车、双人花样滑冰等。</p>
+        <ul>
+            <li>短道速滑：女子1000米决赛</li>
+            <li>高山滑雪：男子回转</li>
+            <li>跳台滑雪：男子超团体（新设项目）</li>
+            <li>自由式滑雪：女子大跳台</li>
+            <li>雪车：女子单人（新奥运项目）</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge sports">体育</span>
+            <span class="source">Wikipedia</span>
+            <span class="time">15小时前</span>
+        </div>
+        <h3><a href="https://en.wikipedia.org/wiki/Figure_skating_at_the_2026_Winter_Olympics" target="_blank" class="news-link">19. 俄罗斯和白俄罗斯运动员获准参加花滑资格赛</a></h3>
+        <p class="summary">尽管因2022年俄乌冲突被禁赛，俄白两国各被允许提名一名选手或组合参加<strong>"通往米兰之路"</strong>资格赛，以获取2026冬奥会花滑项目参赛资格。需通过严格审核且不代表国家。</p>
+        <ul>
+            <li>特殊通道："Skate to Milano"资格赛</li>
+            <li>名额：每国各1人/组合</li>
+            <li>限制：中立身份，不代表国家</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge sports">体育</span>
+            <span class="source">TODAY</span>
+            <span class="time">4小时前</span>
+        </div>
+        <h3><a href="https://www.today.com/video/olympic-figure-skating-starts-with-team-event-what-to-expect-257267269830" target="_blank" class="news-link">20. 花滑传奇Scott Hamilton展望团体赛：美国队有望卫冕</a></h3>
+        <p class="summary">1984年冬奥会金牌得主Scott Hamilton加入TODAY节目，分析团体赛前景。他指出美国队具备卫冕实力，但日本、加拿大竞争激烈。团队赛包含男单、女单、双人、冰舞四个项目。</p>
+        <ul>
+            <li>解说嘉宾：Scott Hamilton（1984冠军）</li>
+            <li>美国前景：有望卫冕</li>
+            <li>竞争对手：日本、加拿大实力强劲</li>
+        </ul>
+    </div>
+
+    <h2 class="domestic">🇨🇳 国内·社会·健康 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge domestic">社会</span>
             <span class="source">星洲日报</span>
             <span class="time">17小时前</span>
         </div>
-        <h3><a href="https://www.sinchew.com.my/news/20260206/international/7247580" target="_blank" class="news-link">9. 河南"蝴蝶宝贝"高尚好即将迎来25岁生日，曾被告知活不过两岁</a></h3>
-        <p class="summary">河南郑州的高尚好是一位重度营养不良型<strong>遗传性大疱性表皮松解症（EB）</strong>患者，2001年出生时下肢皮肤缺失，右眼失明，被医生断言<strong>"活不过两岁"</strong>。历经5次分指手术、166天ICU，她即将迎来25岁生日，体重仅30公斤，无法直立行走但坚强乐观。</p>
+        <h3><span class="news-link">21. 河南"蝴蝶宝贝"高尚好即将迎来25岁生日，曾被告知活不过两岁</span></h3>
+        <p class="summary">郑州的高尚好是重度<strong>遗传性大疱性表皮松解症（EB）</strong>患者，俗称"蝴蝶宝贝"。2001年出生时下肢皮肤缺失、右眼失明，医生曾断言<strong>"活不过两岁"</strong>。历经ICU166天、5次手术，即将25岁，体重仅30公斤，无法直立但坚强乐观。</p>
         <ul>
-            <li>病症：遗传性大疱性表皮松解症（EB，俗称"蝴蝶宝贝"）</li>
+            <li>病症：EB（皮肤极度脆弱如蝴蝶翅膀）</li>
             <li>医生预言：活不过两岁</li>
-            <li>现状：即将25岁，经历5次手术</li>
-            <li>身高体重：1.5米，约30公斤</li>
+            <li>现状：即将25岁，经历5次分指手术</li>
+            <li>身体状况：身高1.5米，体重约30公斤</li>
         </ul>
     </div>
 
@@ -337,39 +565,67 @@
             <span class="source">中国外交部</span>
             <span class="time">2天前</span>
         </div>
-        <h3><a href="https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml" target="_blank" class="news-link">10. 王毅回顾2025中国外交：抵制单边主义，维护多边贸易，推动热点降温</a></h3>
-        <p class="summary">外交部长王毅表示<strong>2025年是联合国成立80周年</strong>，中国外交在习近平主席领航下明确抵制单边保护主义，有力维护多边贸易体制，积极推动热点问题停火降温。中国持续为变乱交织的世界提供"稀缺的确定性和宝贵的建设性"。</p>
+        <h3><a href="https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml" target="_blank" class="news-link">22. 王毅回顾2025中国外交：维护多边贸易，抵制单边主义</a></h3>
+        <p class="summary">外交部长王毅表示<strong>2025年是联合国成立80周年</strong>，国际关系遭遇逆风乱流。中国外交在习近平主席领航下明确抵制单边保护主义，有力维护多边贸易体制，为变乱交织世界提供<strong>"稀缺的确定性和宝贵的建设性"</strong>。</p>
         <ul>
-            <li>2025重大节点：联合国成立80周年</li>
-            <li>中国立场：抵制单边主义，维护多边贸易</li>
-            <li>外交成就：推动热点问题停火降温</li>
-            <li>承诺：为世界提供确定性和建设性</li>
+            <li>重要节点：联合国成立80周年</li>
+            <li>核心立场：抵制单边主义，维护多边贸易</li>
+            <li>中国角色：提供确定性和建设性</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge domestic">国内</span>
+            <span class="source">Reuters</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://www.reuters.com/world/asia-pacific/chinas-xi-trump-hold-call-chinese-state-media-reports-2026-02-04/" target="_blank" class="news-link">23. 中国考虑增购美国大豆：特朗普称与习近平通话"非常积极"</a></h3>
+        <p class="summary">特朗普透露与习近平进行"非常积极"通话，表示<strong>中国正在考虑购买更多美国农场大豆</strong>。这是贸易谈判可能好转的信号，但台湾议题仍是双边关系的紧张点。</p>
+        <ul>
+            <li>经济议题：农业出口（大豆）</li>
+            <li>特朗普评价："非常积极"</li>
+            <li>潜在影响：缓解贸易战压力</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge domestic">健康</span>
+            <span class="source">Al Jazeera</span>
+            <span class="time">16小时前</span>
+        </div>
+        <h3><a href="https://www.aljazeera.com/news/2026/2/6/trumprx-website-launches-in-us-with-promise-to-lower-price-of-medicine" target="_blank" class="news-link">24. 特朗普推出TrumpRx平台：承诺大幅降低美国处方药价格</a></h3>
+        <p class="summary">特朗普推出<strong>TrumpRx</strong>直销药品网站，针对现金支付患者绕过保险直接购药，承诺降低天价处方药费用。目标人群为无保险或保险不足患者，特朗普称"将为医疗系统节省巨额资金"。</p>
+        <ul>
+            <li>平台：TrumpRx（直销药品）</li>
+            <li>模式：现金支付，绕过保险</li>
+            <li>目标人群：无保险或保险不足者</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge domestic">健康</span>
+            <span class="source">ScienceDaily</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://www.sciencedaily.com/news/health_medicine/" target="_blank" class="news-link">25. 研究发现：小剂量抗生素可延长寿命</a></h3>
+        <p class="summary">研究人员发现小剂量抗生素可促使肠道细菌产生延寿化合物。在蠕虫实验中，这导致寿命延长；在<strong>小鼠实验中表现出更健康的胆固醇水平</strong>。为衰老研究和益生菌开发提供新方向。</p>
+        <ul>
+            <li>机制：低剂量抗生素→肠道菌→延寿化合物</li>
+            <li>蠕虫效果：寿命延长</li>
+            <li>小鼠效果：胆固醇更健康</li>
         </ul>
     </div>
 
     <hr>
 
     <div class="footer">
-        <p><strong>数据引擎：</strong>Brave Search API · 免费计划</p>
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">10</div>
-                <div class="stat-label">篇精选</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">5</div>
-                <div class="stat-label">大类别</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">8+</div>
-                <div class="stat-label">新闻源</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">1996</div>
-                <div class="stat-label">剩余额度</div>
-            </div>
-        </div>
-        <p style="margin-top: 25px;">由 <strong>Krowbat</strong> 🦇 为你实时搜索整理 · 2026-02-06</p>
+        <p><strong>数据引擎：</strong>Brave Search API · 豪华完整版</p>
+        <p><strong>本次消耗：</strong>6次API查询 · 覆盖12个权威媒体源</p>
+        <p><strong>剩余额度：</strong>1994/2000 次/月 · 下次重置：2026-03-01</p>
+        <p style="margin-top: 20px;">由 <strong>Krowbat</strong> 🦇 为你实时搜索整理 · 2026-02-06</p>
     </div>
 </body>
 </html>

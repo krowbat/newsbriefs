@@ -1,0 +1,218 @@
+{
+  "date": "2026-02-06",
+  "edition": "豪华完整版",
+  "sources": ["BBC", "Reuters", "NYT", "CBS", "USA Today", "Gadgets360", "eWeek", "Business Insider", "ScienceDaily", "Al Jazeera", "东方日报", "星洲日报"],
+  "categories": {
+    "international": {
+      "name": "国际头条",
+      "count": 5,
+      "items": [
+        {
+          "title": "美伊核谈判阿曼重启：伊朗称"良好开端"，美国要求停止镇压抗议并终止核计划",
+          "url": "https://www.bbc.com/news/articles/cr57g1y8286o",
+          "source": "BBC",
+          "time": "30分钟前",
+          "summary": "伊朗外长阿拉格奇称会谈是'良好开端'。美国要求伊朗停止镇压抗议者（人权组织称已确认至少6,941人死亡）并终止核计划。"
+        },
+        {
+          "title": "英国首相斯塔默为爱泼斯坦丑闻道歉，承认"相信了他的谎言"",
+          "url": "https://www.bbc.com/news/articles/cp37v4kyv3eo",
+          "source": "BBC",
+          "time": "20小时前",
+          "summary": "斯塔默向爱泼斯坦受害者道歉，承认任命曼德尔森并'相信了他的谎言'，英媒称首相面临'严重危机'。"
+        },
+        {
+          "title": "华盛顿邮报裁员引发大规模抗议：数百人高呼"民主死于黑暗"",
+          "url": "https://www.orientaldaily.com.my/news/international/2026/02/06/795707",
+          "source": "东方日报",
+          "time": "16小时前",
+          "summary": "数百人抗议裁员数百名记者（包括大部分海外驻点），标语引用华邮著名口号讽刺贝索斯收购后的战略收缩。"
+        },
+        {
+          "title": "NBC主持人母亲失踪：警方认为84岁老人"仍在外面某处"",
+          "url": "https://www.bbc.com/news/articles/c2e18wvrx9xo",
+          "source": "BBC",
+          "time": "18小时前",
+          "summary": "《今日秀》主持人Savannah Guthrie的84岁母亲失踪，警方认为可能遭绑架，Guthrie因此退出冬奥开幕主持。"
+        },
+        {
+          "title": "克里姆林宫否认爱泼斯坦是俄间谍，波兰计划展开调查",
+          "url": "https://www.orientaldaily.com.my/news/international/2026/02/05/795654",
+          "source": "东方日报",
+          "time": "1天前",
+          "summary": "克宫否认间谍指控。此前美司法部公布300万页爱泼斯坦档案，波兰计划对其与俄罗斯情报机构联系展开调查。"
+        }
+      ]
+    },
+    "china_foreign_media": {
+      "name": "外电看中国",
+      "count": 5,
+      "items": [
+        {
+          "title": "习近平与特朗普通话：要求美国对台军售"审慎行事"",
+          "url": "https://www.bbc.com/news/articles/c62wpjd3j1zo",
+          "source": "BBC",
+          "time": "1天前",
+          "summary": "习近平称台湾是中美关系"最重要议题"，要求特朗普对台军售"审慎行事"，同时表达重视中美关系的立场。"
+        },
+        {
+          "title": "特朗普推动美俄核军备控制，关键在中国是否参与",
+          "url": "https://www.bbc.com/news/articles/c70l27gy47do",
+          "source": "BBC",
+          "time": "1天前",
+          "summary": "分析师称，美俄核军控谈判因乌克兰危机复杂化，中国作为新兴核超级大国的参与至关重要。"
+        },
+        {
+          "title": "美国提出计划对抗中国关键矿产供应链主导权",
+          "url": "https://www.bbc.com/news/articles/c5y41r5rzrno",
+          "source": "BBC",
+          "time": "2天前",
+          "summary": "美国会议呼吁建立替代供应链，减少对中国稀土和关键矿产依赖。中国外交部回应称应遵循市场经济原则。"
+        },
+        {
+          "title": "中美领导人讨论台湾和大豆：中国考虑增购美国大豆",
+          "url": "https://www.reuters.com/world/asia-pacific/chinas-xi-trump-hold-call-chinese-state-media-reports-2026-02-04/",
+          "source": "Reuters",
+          "time": "1天前",
+          "summary": "特朗普称与习近平进行'非常积极'的通话，中国考虑购买更多美国农场大豆，但北京同时就台湾问题发出警告。"
+        },
+        {
+          "title": "BBC调查：中国酒店偷拍产业链，情侣 intimacy 被直播给数千人",
+          "url": "https://www.bbc.com/news/articles/c62rexy9y3no",
+          "source": "BBC",
+          "time": "18小时前",
+          "summary": "BBC追踪到郑州一家酒店房间的偷拍设备，发现情侣私密时刻被非法直播给数千订阅者，揭示中国偷拍产业规模。"
+        }
+      ]
+    },
+    "technology": {
+      "name": "科技前沿",
+      "count": 5,
+      "items": [
+        {
+          "title": "Anthropic发布Claude Opus 4.6：100万token上下文，agentic编码能力飞跃",
+          "url": "https://www.gadgets360.com/ai/news/anthropic-claude-opus-4-6-ai-model-launch-1-million-context-window-agentic-coding-specifications-10957767",
+          "source": "Gadgets360",
+          "time": "10小时前",
+          "summary": "支持100万token上下文（可处理整本书），在自主代码生成、调试、重构任务上表现大幅提升。"
+        },
+        {
+          "title": "OpenAI发布GPT-5.3-Codex：首个协助开发自身的AI模型",
+          "url": "https://www.gadgets360.com/ai/news/openai-gpt-5-3-codex-first-ai-model-developed-itself-agentic-coding-faster-features-details-released-10959066",
+          "source": "Gadgets360",
+          "time": "7小时前",
+          "summary": "首个协助开发自身代码的AI模型，可独立开发复杂视频游戏，标志AI自我改进能力里程碑。"
+        },
+        {
+          "title": "AI语音独角兽ElevenLabs融资5亿美元，估值达110亿美元",
+          "url": "https://www.eweek.com/news/elevenlabs-500m-funding/",
+          "source": "eWeek",
+          "time": "1天前",
+          "summary": "2025年底ARR收入超3.3亿美元，企业客户采用语音和对话AI驱动增长，成为AI语音合成领域最大独角兽。"
+        },
+        {
+          "title": "AI初创吸金狂潮：2025年全球融资2700亿美元，占风投总额过半",
+          "url": "https://journalrecord.com/2026/02/06/ai-startups-global-venture-capital-2025/",
+          "source": "The Journal Record",
+          "time": "1天前",
+          "summary": "AI初创公司2025年募资2700亿美元，首次占据全球风险投资总额50%以上，北美公司领跑。"
+        },
+        {
+          "title": "分析师警告：2026年AI软件行业将迎来大整合，并购量增长30-40%",
+          "url": "https://www.businessinsider.com/ai-software-collapse-alixpartners-what-happens-next-2026-2",
+          "source": "Business Insider",
+          "time": "3小时前",
+          "summary": "AlixPartners预测AI颠覆将迫使中端企业软件行业大规模整合，增长放缓和AI投资挤压将推动并购潮。"
+        }
+      ]
+    },
+    "sports": {
+      "name": "体育 · 2026米兰冬奥会",
+      "count": 5,
+      "items": [
+        {
+          "title": "冬奥会开幕！伊布拉希莫维奇担任最后火炬手，首创双主火炬",
+          "url": "https://www.cbsnews.com/live-updates/olympics-opening-ceremony-winter-2026/",
+          "source": "CBS/NYT",
+          "time": "实时",
+          "summary": "伊布（AC米兰顾问）担任最后火炬手，美国旗手为杰克逊（速滑）和德尔杜卡（雪橇）。本届首次同时点燃双主火炬（米兰和平门+科尔蒂纳）。"
+        },
+        {
+          "title": "美国花滑团体赛首日领先，有望卫冕金牌",
+          "url": "https://eu.usatoday.com/story/sports/olympics/2026/02/06/winter-olympics-live-updates-results-today/88524913007/",
+          "source": "USA Today",
+          "time": "21分钟前",
+          "summary": "花滑团体赛首日结束，美国队暂居第一，正寻求卫冕该项目金牌。"
+        },
+        {
+          "title": "冬奥会今日赛程：短道1000米、男子回转、跳台滑雪超团体决赛",
+          "url": "https://www.bbc.com/sport/articles/c338y36kngzo",
+          "source": "BBC Sport",
+          "time": "18小时前",
+          "summary": "男子短道1000米、男子高山滑雪回转、男子跳台滑雪超团体、女子自由式滑雪大跳台、女子单人雪车、双人花滑等决赛。"
+        },
+        {
+          "title": "俄罗斯和白俄罗斯运动员获准参加花滑资格赛",
+          "url": "https://en.wikipedia.org/wiki/Figure_skating_at_the_2026_Winter_Olympics",
+          "source": "Wikipedia",
+          "time": "15小时前",
+          "summary": "俄白两国各被允许提名一名选手或组合参加'通往米兰之路'资格赛，以获取2026冬奥会参赛资格。"
+        },
+        {
+          "title": "花滑传奇Scott Hamilton展望团体赛：美国队有望卫冕",
+          "url": "https://www.today.com/video/olympic-figure-skating-starts-with-team-event-what-to-expect-257267269830",
+          "source": "TODAY",
+          "time": "4小时前",
+          "summary": "1984年金牌得主Scott Hamilton加入TODAY节目，分析团体赛前景，称美国队具备卫冕实力。"
+        }
+      ]
+    },
+    "china_domestic": {
+      "name": "国内·华人圈",
+      "count": 5,
+      "items": [
+        {
+          "title": "河南"蝴蝶宝贝"高尚好即将迎来25岁生日，曾被告知活不过两岁",
+          "url": "https://www.sinchew.com.my/news/20260206/international/7247580",
+          "source": "星洲日报",
+          "time": "17小时前",
+          "summary": "重度EB患者（遗传性大疱性表皮松解症），出生时下肢皮肤缺失、右眼失明，医生曾断言'活不过两岁'，历经5次手术，体重仅30公斤。"
+        },
+        {
+          "title": "王毅回顾2025中国外交：维护多边贸易体制，抵制单边主义",
+          "url": "https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml",
+          "source": "中国外交部",
+          "time": "2天前",
+          "summary": "2025年是联合国成立80周年，中国外交抵制单边保护主义，为变乱交织世界提供'稀缺的确定性和宝贵的建设性'。"
+        },
+        {
+          "title": "中国考虑增购美国大豆：特朗普称与习近平通话"非常积极"",
+          "url": "https://www.reuters.com/world/asia-pacific/chinas-xi-trump-hold-call-chinese-state-media-reports-2026-02-04/",
+          "source": "Reuters",
+          "time": "1天前",
+          "summary": "农业出口问题或现转机，但台湾议题仍是双边关系紧张点。"
+        },
+        {
+          "title": "特朗普推出TrumpRx平台：承诺降低美国处方药价格",
+          "url": "https://www.aljazeera.com/news/2026/2/6/trumprx-website-launches-in-us-with-promise-to-lower-price-of-medicine",
+          "source": "Al Jazeera",
+          "time": "16小时前",
+          "summary": "新网站针对现金支付患者，绕过保险直接购药，特朗普称'将为医疗系统节省巨额资金'。"
+        },
+        {
+          "title": "研究发现：小剂量抗生素可延长寿命，促进肠道菌群产生延寿化合物",
+          "url": "https://www.sciencedaily.com/news/health_medicine/",
+          "source": "ScienceDaily",
+          "time": "1天前",
+          "summary": "低剂量抗生素可促使肠道细菌产生延寿化合物，实验中蠕虫寿命延长，小鼠胆固醇更健康。"
+        }
+      ]
+    }
+  },
+  "stats": {
+    "total_stories": 25,
+    "categories": 5,
+    "sources": 12,
+    "queries_used": 6
+  }
+}
