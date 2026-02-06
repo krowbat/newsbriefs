@@ -1,0 +1,47 @@
+{
+  "date": "2026-02-06",
+  "sources": ["Brave Search: VOA Chinese, Oriental Daily, Sin Chew, China MFA"],
+  "items": [
+    {
+      "title": "美伊核谈判将于周五在阿曼举行，美国要求伊朗停止镇压抗议并终止核计划",
+      "url": "https://www.voachinese.com/z/1739",
+      "source": "美国之音",
+      "category": "国际",
+      "summary": "随着美伊谈判周五在阿曼举行，美国官员要求伊朗停止镇压抗议者并终止寻求核武器的计划。特朗普同日表示应与俄罗斯制定新核武协议。"
+    },
+    {
+      "title": "克里姆林宫否认爱泼斯坦是俄间谍",
+      "url": "https://www.orientaldaily.com.my/news/international/2026/02/05/795654",
+      "source": "东方日报",
+      "category": "国际",
+      "summary": "克里姆林宫周四否认已故'富豪淫媒'爱泼斯坦是俄罗斯秘密间谍的说法。美国司法部上月公布约300万页爱泼斯坦档案后，波兰计划对爱泼斯坦与俄罗斯情报机构的所谓联系展开调查。"
+    },
+    {
+      "title": "数百人抗议华盛顿邮报大裁员，高呼'民主死于黑暗'",
+      "url": "https://www.orientaldaily.com.my/news/international/2026/02/06/795707",
+      "source": "东方日报", 
+      "category": "国际",
+      "summary": "数百人在华盛顿邮报总部外集会，抗议报社裁减数百名记者的决定，包括大部分海外驻点人员。标语写道：'民主死于黑暗'。"
+    },
+        {
+      "title": "河南'蝴蝶宝贝'高尚好即将迎来25岁生日，曾被告知活不过两岁",
+      "url": "https://www.sinchew.com.my/news/20260206/international/7247580",
+      "source": "星洲日报",
+      "category": "社会",
+      "summary": "河南郑州的'蝴蝶宝贝'高尚好即将迎来25岁生日。她是一位重度营养不良型遗传性大疱性表皮松解症患者，曾被医生断言'活不过两岁'，历经5次分指手术。"
+    },
+    {
+      "title": "王毅：2025年中国外交维护国际公平正义，推动构建人类命运共同体",
+      "url": "https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml",
+      "source": "中国外交部",
+      "category": "国内",
+      "summary": "王毅表示2025年是联合国成立80周年，中国外交在习近平主席领航下有力维护多边贸易体制，推动热点问题停火降温，持续为变乱交织世界提供确定性。"
+    }
+  ],
+  "meta": {
+    "api_provider": "Brave Search",
+    "plan": "Free",
+    "quota_remaining": 1998,
+    "note": "API rate limit hit after first query (1 req/sec limit)"
+  }
+}

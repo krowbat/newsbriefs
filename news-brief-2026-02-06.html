@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻简报 - 2026-02-06</title>
+    <title>新闻简报 - 2026-02-06 (Brave API版)</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -22,6 +22,15 @@
             color: #666;
             font-size: 0.9em;
             margin-bottom: 40px;
+        }
+        .api-badge {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
         }
         h2 {
             color: #1d3557;
@@ -50,12 +59,10 @@
         .summary {
             color: #555;
             font-style: italic;
-            border-left: 3px solid #457b9d;
-            padding-left: 12px;
-            margin: 10px 0;
             background: #e9f5ff;
             padding: 10px;
             border-radius: 4px;
+            border-left: 3px solid #457b9d;
         }
         .news-link {
             color: #457b9d;
@@ -85,138 +92,90 @@
             font-style: italic;
             margin-top: 40px;
         }
+        .api-notice {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
-    <h1>📰 新闻简报</h1>
-    <p class="date"><strong>2026-02-06</strong> · 星期五</p>
+    <h1>📰 新闻简报 <span class="api-badge">Powered by Brave API</span></h1>
+    <p class="date"><strong>2026-02-06</strong> · 星期五 · 实时搜索版</p>
+    
+    <div class="api-notice">
+        <strong>🔔 新功能上线：</strong>今日简报采用 Brave Search API 实时搜索，覆盖更多中文新闻源。免费额度：2000次/月，剩余1998次。
+    </div>
 
     <hr>
 
     <h2>🔴 国际头条</h2>
 
     <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/cr57g1y8286o" target="_blank" class="news-link">1. 美伊核谈判：伊朗外长称"良好的开端"</a><span class="category">国际</span></h3>
-        <p class="summary">伊朗外长阿巴斯·阿拉格奇表示，与美国在阿曼进行了数小时的会谈是"良好的开端"，双方将继续谈判，尽管进入谈判时的立场差异显著。</p>
-        <p><span class="source">来源: BBC</span></p>
+        <h3><a href="https://www.voachinese.com/z/1739" target="_blank" class="news-link">1. 美伊核谈判重启：美国要求伊朗停止镇压抗议并终止核计划</a><span class="category">国际</span></h3>
+        <p class="summary">随着美伊谈判周五在阿曼举行，美国官员要求伊朗停止镇压抗议者并终止寻求核武器的计划。特朗普同日表态称，美国应与俄罗斯制定新核武协议而非续签现有条约。</p>
+        <p><span class="source">来源: 美国之音</span></p>
         <ul>
-            <li>会谈在阿曼举行，持续数小时</li>
-            <li>双方进入谈判时立场差异显著</li>
-            <li>伊朗方面称将继续对话</li>
+            <li>谈判地点：阿曼</li>
+            <li>美国要求：停止镇压抗议 + 终止核计划</li>
+            <li>特朗普表态：应与俄制定新核武协议</li>
         </ul>
     </div>
 
     <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/c3686nzexp3o" target="_blank" class="news-link">2. 俄罗斯将军在莫斯科遭枪击</a><span class="category">国际</span></h3>
-        <p class="summary">俄罗斯军事情报总局高级官员弗拉基米尔·阿列克谢耶夫中将在莫斯科郊区遭枪击受伤，身份为俄军总参谋部情报总局资深人物。</p>
-        <p><span class="source">来源: BBC</span></p>
+        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/05/795654" target="_blank" class="news-link">2. 克里姆林宫否认爱泼斯坦是俄罗斯间谍</a><span class="category">国际</span></h3>
+        <p class="summary">克里姆林宫周四否认已故"富豪淫媒"爱泼斯坦是俄罗斯秘密间谍的说法。此前美国司法部公布约300万页爱泼斯坦档案，波兰计划对爱泼斯坦与俄罗斯情报机构的所谓联系展开调查。</p>
+        <p><span class="source">来源: 东方日报</span></p>
         <ul>
-            <li>受害者：弗拉基米尔·阿列克谢耶夫中将</li>
-            <li>地点：莫斯科郊区</li>
-            <li>身份：俄军总参谋部情报总局（GRU）资深官员</li>
+            <li>克宫明确否认间谍指控</li>
+            <li>美司法部上月公布300万页档案</li>
+            <li>波兰计划展开调查</li>
         </ul>
     </div>
 
     <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/c0r4lrly44xo" target="_blank" class="news-link">3. 加拿大和法国将在格陵兰开设领事馆</a><span class="category">国际</span></h3>
-        <p class="summary">在美国总统特朗普表示希望收购格陵兰之前，两国就已经计划开设领事馆，但现在这被视为对格陵兰人的声援姿态。</p>
-        <p><span class="source">来源: BBC</span></p>
+        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/06/795707" target="_blank" class="news-link">3. 《华盛顿邮报》大裁员引发抗议，民众高呼"民主死于黑暗"</a><span class="category">国际</span></h3>
+        <p class="summary">数百人周四在华盛顿邮报总部外集会，抗议报社裁减数百名记者的决定，其中包括大部分海外驻点人员。抗议标语写道："民主死于黑暗"——呼应华邮著名口号。</p>
+        <p><span class="source">来源: 东方日报</span></p>
         <ul>
-            <li>计划早在特朗普表态前就已启动</li>
-            <li>被视为对格陵兰人的声援</li>
-            <li>回应特朗普的格陵兰收购意图</li>
+            <li>裁员规模：数百名记者</li>
+            <li>重点裁撤：海外驻点人员</li>
+            <li>抗议口号："民主死于黑暗"</li>
+        </ul>
+    </div>
+
+    <h2>🇨🇳 国内/华人圈</h2>
+
+    <div class="news-item">
+        <h3><a href="https://www.sinchew.com.my/news/20260206/international/7247580" target="_blank" class="news-link">4. 河南"蝴蝶宝贝"即将迎来25岁生日，曾被告知活不过两岁</a><span class="category">社会</span></h3>
+        <p class="summary">河南郑州的高尚好是一位重度营养不良型遗传性大疱性表皮松解症（EB）患者，出生时下肢皮肤缺失，曾被断言"活不过两岁"，历经5次分指手术，即将迎来25岁生日。</p>
+        <p><span class="source">来源: 星洲日报</span></p>
+        <ul>
+            <li>病症：遗传性大疱性表皮松解症（EB）</li>
+            <li>医生预言：活不过两岁</li>
+            <li>现状：即将25岁，经历5次手术</li>
         </ul>
     </div>
 
     <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/cg7y7gz2835o" target="_blank" class="news-link">4. 巴基斯坦清真寺爆炸致30余人死亡</a><span class="category">国际</span></h3>
-        <p class="summary">巴基斯坦官员称，一起爆炸袭击清真寺事件已造成30多人死亡，具体细节仍在调查中。</p>
-        <p><span class="source">来源: BBC</span></p>
+        <h3><a href="https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml" target="_blank" class="news-link">5. 王毅回顾2025年中国外交：维护多边贸易，推动热点问题降温</a><span class="category">国内</span></h3>
+        <p class="summary">王毅表示2025年是联合国成立80周年，中国外交在习近平主席领航下明确抵制单边保护主义，有力维护多边贸易体制，持续为变乱交织世界提供确定性。</p>
+        <p><span class="source">来源: 中国外交部</span></p>
         <ul>
-            <li>地点：巴基斯坦</li>
-            <li>目标：清真寺</li>
-            <li>伤亡：30余人死亡</li>
-        </ul>
-    </div>
-
-    <h2>🇺🇸 美国新闻</h2>
-
-    <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/ce8r8y78g10o" target="_blank" class="news-link">5. 特朗普撤下含种族主义视频的推文</a><span class="category">美国</span></h3>
-        <p class="summary">特朗普撤下了一段将奥巴马夫妇描绘成猿猴的有争议视频，此前一位黑人共和党参议员称其为"白宫发出的最种族主义的东西"。</p>
-        <p><span class="source">来源: BBC</span></p>
-        <ul>
-            <li>视频将奥巴马夫妇描绘成猿猴</li>
-            <li>黑人共和党参议员强烈批评</li>
-            <li>白宫回应："停止虚假愤怒"</li>
-        </ul>
-    </div>
-
-    <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/czjgj3pwjxgo" target="_blank" class="news-link">6. Luigi Mangione高呼"同一审判两次"</a><span class="category">美国</span></h3>
-        <p class="summary">被指控杀害保险公司CEO的曼吉奥内在离开纽约法庭时高呼"同一审判两次"，抗议审判日期确定，此前他在另一家法院已受审。</p>
-        <p><span class="source">来源: BBC</span></p>
-        <ul>
-            <li>被控杀害联合健康保险CEO</li>
-            <li>纽约法庭确定审判日期</li>
-            <li>抗议面临双重审判</li>
-        </ul>
-    </div>
-
-    <h2>🏂 体育新闻</h2>
-
-    <div class="news-item">
-        <h3><a href="https://www.bbc.com/sport/articles/cj0nl5g83zlo" target="_blank" class="news-link">7. 2026年米兰-科尔蒂纳冬奥会今晚开幕</a><span class="category">体育</span></h3>
-        <p class="summary">第26届冬季奥运会开幕式将于周五晚上举行，未来16天全球体育迷的注意力将聚焦于米兰-科尔蒂纳。</p>
-        <p><span class="source">来源: BBC</span></p>
-        <ul>
-            <li>主办：意大利米兰-科尔蒂纳</li>
-            <li>届数：第26届</li>
-            <li>赛期：16天</li>
-        </ul>
-    </div>
-
-    <h2>🇨🇦 加拿大/本地新闻</h2>
-
-    <div class="news-item">
-        <h3><a href="https://www.cbc.ca/news/canada/edmonton/cn-train-derailment-wildwood-alta-tsb-9.7077135" target="_blank" class="news-link">8. 加拿大国家铁路列车在阿尔伯塔脱轨</a><span class="category">本地新闻</span></h3>
-        <p class="summary">加拿大交通安全委员会派遣调查组前往阿尔伯塔，37节火车车厢周四在埃德蒙顿以西的Wildwood附近脱轨。</p>
-        <p><span class="source">来源: CBC Edmonton</span></p>
-        <ul>
-            <li>时间：周四</li>
-            <li>地点：Wildwood，埃德蒙顿以西</li>
-            <li>规模：37节车厢脱轨</li>
-        </ul>
-    </div>
-
-    <div class="news-item">
-        <h3><a href="https://www.cbc.ca/news/canada/calgary/alberta-judicial-appointments-danielle-smith-9.7076586" target="_blank" class="news-link">9. 前法官反驳史密斯省长对司法任命的批评</a><span class="category">本地新闻</span></h3>
-        <p class="summary">一位前卡尔加里法官加入法律专家行列，批评阿尔伯塔省长丹妮尔·史密斯威胁要削减经费，除非省在联邦法官任命中有更多发言权。</p>
-        <p><span class="source">来源: CBC Edmonton</span></p>
-        <ul>
-            <li>阿尔伯塔省长要求更多司法任命发言权</li>
-            <li>威胁削减联邦任命法官的经费</li>
-            <li>法律界专家集体批评</li>
-        </ul>
-    </div>
-
-    <h2>💊 健康新闻</h2>
-
-    <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/c80142p2g00o" target="_blank" class="news-link">10. 他汀类药物比宣传更安全</a><span class="category">健康</span></h3>
-        <p class="summary">英国一项大型审查发现，广泛使用的降胆固醇药物他汀（statin）比此前宣传的要安全得多，副作用风险被高估。</p>
-        <p><span class="source">来源: BBC</span></p>
-        <ul>
-            <li>英国大型审查研究</li>
-            <li>降胆固醇药物</li>
-            <li>安全性优于此前认知</li>
+            <li>2025：联合国成立80周年</li>
+            <li>中国立场：抵制单边主义，维护多边贸易</li>
+            <li>承诺：为世界提供确定性和建设性</li>
         </ul>
     </div>
 
     <hr>
 
-    <p><strong>数据来源:</strong> BBC News, CBC Edmonton</p>
+    <p><strong>数据引擎:</strong> Brave Search API · 实时中文新闻聚合</p>
+    <p><strong>API状态:</strong> 免费计划 · 剩余 1998/2000 次/月</p>
 
-    <p class="footer">由 Krowbat 🦇 为你整理 · 2026-02-06</p>
+    <p class="footer">由 Krowbat 🦇 为你实时搜索整理 · 2026-02-06</p>
 </body>
 </html>
