@@ -1,0 +1,82 @@
+{
+  "date": "2026-02-06",
+  "sources": ["Brave Search: BBC, NYT, CBS, VOA, 东方日报, 星洲日报, Gadgets360, ScienceDaily"],
+  "items": [
+    {
+      "title": "美伊核谈判阿曼重启：伊朗外长称"良好开端"，美国要求停止镇压抗议",
+      "url": "https://www.bbc.com/news/articles/cr57g1y8286o",
+      "source": "BBC",
+      "category": "国际头条",
+      "summary": "伊朗外长阿巴斯·阿拉格奇表示美伊会谈将继续，双方在阿曼进行了数小时谈判。美国官员要求伊朗停止镇压抗议者（人权组织称已确认至少6941人死亡）并终止核计划。"
+    },
+    {
+      "title": "英国首相斯塔默为爱泼斯坦丑闻道歉，承认"相信了他的谎言"",
+      "url": "https://www.bbc.com/news/articles/cp37v4kyv3eo",
+      "source": "BBC",
+      "category": "国际",
+      "summary": "英国首相斯塔默向爱泼斯坦受害者道歉，承认任命曼德尔森并相信他。曼德尔森未回应，但BBC了解其立场为未犯罪且非财务动机。"
+    },
+    {
+      "title": "克里姆林宫否认爱泼斯坦是俄间谍，波兰计划展开调查",
+      "url": "https://www.orientaldaily.com.my/news/international/2026/02/05/795654",
+      "source": "东方日报",
+      "category": "国际",
+      "summary": "克里姆林宫否认爱泼斯坦是俄罗斯间谍。美国司法部上月公布300万页档案后，波兰计划对其与俄罗斯情报机构联系展开调查。"
+    },
+    {
+      "title": "华盛顿邮报裁员引发抗议：数百人集会高呼"民主死于黑暗"",
+      "url": "https://www.orientaldaily.com.my/news/international/2026/02/06/795707",
+      "source": "东方日报",
+      "category": "国际",
+      "summary": "数百人在华盛顿邮报总部外抗议裁员数百名记者（包括大部分海外驻点），标语呼应华邮著名口号"民主死于黑暗"。"
+    },
+    {
+      "title": "2026米兰-科尔蒂纳冬奥会开幕：伊布拉希莫维奇担任最后火炬手",
+      "url": "https://www.cbsnews.com/live-updates/olympics-opening-ceremony-winter-2026/",
+      "source": "CBS News",
+      "category": "体育",
+      "summary": "冬奥会开幕式在米兰圣西罗体育场举行。伊布拉希莫维奇担任最后火炬手，美国旗手为速度滑冰选手埃琳·杰克逊和雪橇选手弗兰克·德尔杜卡。本届首次同时点燃两个主火炬。"
+    },
+    {
+      "title": "Anthropic发布Claude Opus 4.6模型，加强Agentic编码能力",
+      "url": "https://www.gadgets360.com/ai/news/anthropic-claude-opus-4-6-ai-model-launch-1-million-context-window-agentic-coding-specifications-10957767",
+      "source": "Gadgets360",
+      "category": "科技",
+      "summary": "Anthropic周四发布Claude Opus 4.6，支持100万token上下文窗口，在agentic编码任务上表现大幅提升。"
+    },
+    {
+      "title": "OpenAI发布GPT-5.3-Codex：首个辅助自身开发的AI模型",
+      "url": "https://www.gadgets360.com/ai/news/openai-gpt-5-3-codex-first-ai-model-developed-itself-agentic-coding-faster-features-details-released-10959066",
+      "source": "Gadgets360",
+      "category": "科技",
+      "summary": "OpenAI周四发布GPT-5.3-Codex，这是首个辅助开发自身代码的AI模型，可开发复杂视频游戏。"
+    },
+    {
+      "title": "河南"蝴蝶宝贝"高尚好即将迎来25岁生日，曾被告知活不过两岁",
+      "url": "https://www.sinchew.com.my/news/20260206/international/7247580",
+      "source": "星洲日报",
+      "category": "社会",
+      "summary": "河南郑州的高尚好是重度营养不良型遗传性大疱性表皮松解症患者，出生时下肢皮肤缺失，曾断言"活不过两岁"，历经5次手术，即将25岁。"
+    },
+    {
+      "title": "王毅回顾2025中国外交：维护多边贸易，推动热点问题降温",
+      "url": "https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml",
+      "source": "中国外交部",
+      "category": "国内",
+      "summary": "王毅表示2025年是联合国成立80周年，中国外交在习近平主席领航下抵制单边主义，维护多边贸易体制，持续为变乱世界提供确定性。"
+    },
+    {
+      "title": "NBC主持人Savannah Guthrie的84岁母亲失踪，警方认为"仍在外面某处"",
+      "url": "https://www.bbc.com/news/articles/c2e18wvrx9xo",
+      "source": "BBC",
+      "category": "国际",
+      "summary": "NBC《今日秀》主持人Guthrie的84岁母亲Nancy在亚利桑那州图森家中失踪，警方认为可能遭绑架，Guthrie因此退出冬奥会开幕式主持。"
+    }
+  ],
+  "meta": {
+    "api_provider": "Brave Search",
+    "plan": "Free",
+    "queries_used": 4,
+    "categories": ["国际头条", "科技", "体育", "社会", "国内"]
+  }
+}

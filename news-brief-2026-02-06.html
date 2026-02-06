@@ -3,111 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻简报 - 2026-02-06 (Brave API版)</title>
+    <title>新闻简报 - 2026-02-06 (完整版)</title>
     <style>
+        * { box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
             color: #333;
+            background: #fafafa;
         }
         h1 {
-            color: #e63946;
-            border-bottom: 3px solid #e63946;
-            padding-bottom: 10px;
+            color: #1a1a1a;
+            border-bottom: 4px solid #e63946;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
         }
-        .date {
+        .subtitle {
             color: #666;
-            font-size: 0.9em;
-            margin-bottom: 40px;
+            font-size: 1.1em;
+            margin-bottom: 30px;
         }
         .api-badge {
             display: inline-block;
-            background: #ff6b6b;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.8em;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
             font-weight: bold;
+            margin-left: 10px;
         }
+        .category-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .int { background: #e63946; color: white; }
+        .tech { background: #4361ee; color: white; }
+        .sports { background: #f77f00; color: white; }
+        .social { background: #06d6a0; color: white; }
+        .domestic { background: #118ab2; color: white; }
         h2 {
             color: #1d3557;
-            margin-top: 40px;
-            border-left: 4px solid #e63946;
-            padding-left: 15px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+            font-size: 1.5em;
         }
-        .news-item {
-            background: #f8f9fa;
+        .intro {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid #667eea;
             padding: 20px;
             border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .news-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
             margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
         }
         .news-item h3 {
-            color: #457b9d;
+            color: #1d3557;
             margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.25em;
+            line-height: 1.4;
+        }
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        .source {
+            color: #6c757d;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        .time {
+            color: #adb5bd;
+            font-size: 0.85em;
+        }
+        .summary {
+            color: #495057;
+            font-size: 1em;
+            line-height: 1.7;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #4361ee;
         }
         .news-item ul {
             margin-top: 15px;
-            padding-left: 20px;
+            padding-left: 25px;
+            color: #495057;
         }
-        .source {
-            color: #a8dadc;
-            font-weight: bold;
-        }
-        .summary {
-            color: #555;
-            font-style: italic;
-            background: #e9f5ff;
-            padding: 10px;
-            border-radius: 4px;
-            border-left: 3px solid #457b9d;
+        .news-item li {
+            margin: 8px 0;
+            line-height: 1.6;
         }
         .news-link {
-            color: #457b9d;
+            color: #4361ee;
             text-decoration: none;
-            border-bottom: 1px dashed #457b9d;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
         }
         .news-link:hover {
-            color: #e63946;
-            border-bottom-style: solid;
-        }
-        .category {
-            display: inline-block;
-            background: #e63946;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
-            margin-left: 10px;
+            border-bottom-color: #4361ee;
         }
         hr {
             border: none;
-            border-top: 2px solid #eee;
+            border-top: 1px solid #dee2e6;
             margin: 40px 0;
         }
         .footer {
-            color: #666;
-            font-style: italic;
-            margin-top: 40px;
-        }
-        .api-notice {
-            background: #fff3cd;
-            border: 1px solid #ffc107;
-            padding: 12px;
-            border-radius: 4px;
-            margin-bottom: 20px;
+            color: #6c757d;
             font-size: 0.9em;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #dee2e6;
+        }
+        .stats {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .stat-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4361ee;
+        }
+        .stat-label {
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .news-item { padding: 20px; }
+            h1 { font-size: 1.5em; }
         }
     </style>
 </head>
 <body>
-    <h1>📰 新闻简报 <span class="api-badge">Powered by Brave API</span></h1>
-    <p class="date"><strong>2026-02-06</strong> · 星期五 · 实时搜索版</p>
+    <h1>📰 今日全球新闻简报 <span class="api-badge">Brave AI 搜索</span></h1>
+    <p class="subtitle"><strong>2026年2月6日</strong> · 星期五 · 实时聚合10+权威新闻源</p>
     
-    <div class="api-notice">
-        <strong>🔔 新功能上线：</strong>今日简报采用 Brave Search API 实时搜索，覆盖更多中文新闻源。免费额度：2000次/月，剩余1998次。
+    <div class="intro">
+        <strong>🔍 本简报由 Brave Search API 实时生成</strong><br>
+        覆盖 BBC、纽约时报、CBS、美国之音、星洲日报、Gadgets360 等全球权威媒体，涵盖国际头条、科技、体育、社会、国内五大类别。免费额度：2000次/月。
     </div>
 
     <hr>
@@ -115,67 +186,190 @@
     <h2>🔴 国际头条</h2>
 
     <div class="news-item">
-        <h3><a href="https://www.voachinese.com/z/1739" target="_blank" class="news-link">1. 美伊核谈判重启：美国要求伊朗停止镇压抗议并终止核计划</a><span class="category">国际</span></h3>
-        <p class="summary">随着美伊谈判周五在阿曼举行，美国官员要求伊朗停止镇压抗议者并终止寻求核武器的计划。特朗普同日表态称，美国应与俄罗斯制定新核武协议而非续签现有条约。</p>
-        <p><span class="source">来源: 美国之音</span></p>
+        <div class="meta">
+            <span class="category-badge int">国际头条</span>
+            <span class="source">BBC</span>
+            <span class="time">30分钟前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/news/articles/cr57g1y8286o" target="_blank" class="news-link">1. 美伊核谈判阿曼重启：伊朗称"良好开端"，美国要求停止镇压抗议并终止核计划</a></h3>
+        <p class="summary">伊朗外长阿巴斯·阿拉格奇表示美伊会谈将继续，双方在阿曼进行了数小时谈判。与此同时，美国官员要求伊朗停止镇压抗议者——人权组织称已确认至少<strong>6,941人死亡</strong>，5万多人被捕。特朗普同日表态称应与俄罗斯制定新核武协议。</p>
         <ul>
             <li>谈判地点：阿曼</li>
-            <li>美国要求：停止镇压抗议 + 终止核计划</li>
+            <li>伊朗态度：称会谈是"良好开端"</li>
+            <li>美国要求：停止镇压抗议（6941+死亡）+ 终止核计划</li>
             <li>特朗普表态：应与俄制定新核武协议</li>
         </ul>
     </div>
 
     <div class="news-item">
-        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/05/795654" target="_blank" class="news-link">2. 克里姆林宫否认爱泼斯坦是俄罗斯间谍</a><span class="category">国际</span></h3>
-        <p class="summary">克里姆林宫周四否认已故"富豪淫媒"爱泼斯坦是俄罗斯秘密间谍的说法。此前美国司法部公布约300万页爱泼斯坦档案，波兰计划对爱泼斯坦与俄罗斯情报机构的所谓联系展开调查。</p>
-        <p><span class="source">来源: 东方日报</span></p>
+        <div class="meta">
+            <span class="category-badge int">国际</span>
+            <span class="source">BBC</span>
+            <span class="time">20小时前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/news/articles/cp37v4kyv3eo" target="_blank" class="news-link">2. 英国首相斯塔默为爱泼斯坦丑闻道歉，承认"相信了他的谎言"</a></h3>
+        <p class="summary">英国首相斯塔默向爱泼斯坦受害者道歉，承认任命彼得·曼德尔森并"相信了他的谎言"。曼德尔森未回应，但BBC了解其立场为未犯罪且非财务动机驱动。</p>
         <ul>
-            <li>克宫明确否认间谍指控</li>
-            <li>美司法部上月公布300万页档案</li>
-            <li>波兰计划展开调查</li>
+            <li>斯塔默承认："相信了他的谎言"</li>
+            <li>曼德尔森：系斯塔mer任命的重要官员</li>
+            <li>曼德尔森立场：未犯罪、非财务动机</li>
         </ul>
     </div>
 
     <div class="news-item">
-        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/06/795707" target="_blank" class="news-link">3. 《华盛顿邮报》大裁员引发抗议，民众高呼"民主死于黑暗"</a><span class="category">国际</span></h3>
-        <p class="summary">数百人周四在华盛顿邮报总部外集会，抗议报社裁减数百名记者的决定，其中包括大部分海外驻点人员。抗议标语写道："民主死于黑暗"——呼应华邮著名口号。</p>
-        <p><span class="source">来源: 东方日报</span></p>
+        <div class="meta">
+            <span class="category-badge int">国际</span>
+            <span class="source">东方日报</span>
+            <span class="time">1天前</span>
+        </div>
+        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/05/795654" target="_blank" class="news-link">3. 克里姆林宫否认爱泼斯坦是俄间谍，波兰计划展开调查</a></h3>
+        <p class="summary">克里姆林宫周四明确否认已故"富豪淫媒"爱泼斯坦是俄罗斯秘密间谍的说法。此前美国司法部上月公布约<strong>300万页爱泼斯坦档案</strong>，波兰随即计划对其与俄罗斯情报机构的所谓联系展开调查。</p>
+        <ul>
+            <li>克宫明确否认间谍指控</li>
+            <li>美司法部公布：300万页档案</li>
+            <li>波兰计划：展开官方调查</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge int">国际</span>
+            <span class="source">东方日报</span>
+            <span class="time">16小时前</span>
+        </div>
+        <h3><a href="https://www.orientaldaily.com.my/news/international/2026/02/06/795707" target="_blank" class="news-link">4. 华盛顿邮报裁员引发大规模抗议：数百人集会高呼"民主死于黑暗"</a></h3>
+        <p class="summary">数百人周四在华盛顿邮报总部外集会，抗议报社裁减数百名记者的决定，其中包括大部分海外驻点人员。抗议标语<strong>"民主死于黑暗"</strong>直接引用华邮著名口号，讽刺贝索斯收购后的报社方向。</p>
         <ul>
             <li>裁员规模：数百名记者</li>
             <li>重点裁撤：海外驻点人员</li>
-            <li>抗议口号："民主死于黑暗"</li>
+            <li>抗议口号："民主死于黑暗"（ irony ）</li>
+            <li>背景：贝索斯收购后的战略收缩</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge int">国际</span>
+            <span class="source">BBC</span>
+            <span class="time">18小时前</span>
+        </div>
+        <h3><a href="https://www.bbc.com/news/articles/c2e18wvrx9xo" target="_blank" class="news-link">5. NBC主持人母亲失踪：警方认为84岁老人"仍在外面某处"</a></h3>
+        <p class="summary">NBC《今日秀》主持人Savannah Guthrie的84岁母亲Nancy在亚利桑那州图森家中失踪，警方认为可能遭绑架。Guthrie因此退出米兰冬奥会开幕式主持工作，原定于周五晚与观众见面。</p>
+        <ul>
+            <li>失踪者：Nancy Guthrie，84岁</li>
+            <li>地点：亚利桑那州图森</li>
+            <li>警方判断：可能遭绑架，"仍在外面某处"</li>
+            <li>影响：Guthrie退出冬奥开幕主持</li>
+        </ul>
+    </div>
+
+    <h2>🏂 体育新闻 · 2026米兰冬奥会</h2>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge sports">体育</span>
+            <span class="source">CBS News / NYT</span>
+            <span class="time">实时更新</span>
+        </div>
+        <h3><a href="https://www.cbsnews.com/live-updates/olympics-opening-ceremony-winter-2026/" target="_blank" class="news-link">6. 米兰冬奥会开幕！伊布拉希莫维奇担任最后火炬手，首创双主火炬</a></h3>
+        <p class="summary">2026米兰-科尔蒂纳冬奥会开幕式在米兰圣西罗体育场举行。瑞典传奇球星<strong>伊布拉希莫维奇</strong>担任最后火炬手，美国旗手为速度滑冰选手埃琳·杰克逊和雪橇选手弗兰克·德尔杜卡。本届奥运会首次同时点燃<strong>两个主火炬</strong>，分别位于米兰和平门和科尔蒂纳，将持续燃烧至3月15日冬残奥会闭幕。</p>
+        <ul>
+            <li>最后火炬手：伊布拉希莫维奇（AC米兰顾问）</li>
+            <li>美国旗手：埃琳·杰克逊（速滑）+ 弗兰克·德尔杜卡（雪橇）</li>
+            <li>历史首创：双主火炬（米兰和平门 + 科尔蒂纳）</li>
+            <li>吉祥物：Milo和Tina</li>
+        </ul>
+    </div>
+
+    <h2>💻 科技前沿</h2>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge tech">科技</span>
+            <span class="source">Gadgets360</span>
+            <span class="time">10小时前</span>
+        </div>
+        <h3><a href="https://www.gadgets360.com/ai/news/anthropic-claude-opus-4-6-ai-model-launch-1-million-context-window-agentic-coding-specifications-10957767" target="_blank" class="news-link">7. Anthropic发布Claude Opus 4.6：100万token上下文，agentic编码能力大幅提升</a></h3>
+        <p class="summary">Anthropic周四发布Claude Opus 4.6，这是其Opus 4基础模型的重大更新。新模型支持<strong>100万token上下文窗口</strong>，在agentic编码任务（自主代码生成、调试、重构）上表现大幅提升，可直接处理 entire codebase。</p>
+        <ul>
+            <li>上下文窗口：100万token（约等于整本书）</li>
+            <li>核心升级：agentic编码性能</li>
+            <li>应用场景：自动代码重构、复杂项目开发</li>
+        </ul>
+    </div>
+
+    <div class="news-item">
+        <div class="meta">
+            <span class="category-badge tech">科技</span>
+            <span class="source">Gadgets360</span>
+            <span class="time">7小时前</span>
+        </div>
+        <h3><a href="https://www.gadgets360.com/ai/news/openai-gpt-5-3-codex-first-ai-model-developed-itself-agentic-coding-faster-features-details-released-10959066" target="_blank" class="news-link">8. OpenAI发布GPT-5.3-Codex：首个协助开发自身的AI模型</a></h3>
+        <p class="summary">OpenAI周四发布GPT-5.3-Codex，这是首个<strong>协助开发自身代码的AI模型</strong>。该模型在agentic编码任务上速度更快，可独立开发复杂视频游戏，标志着AI自我改进能力的重要里程碑。</p>
+        <ul>
+            <li>核心特性：AI协助开发自身代码</li>
+            <li>能力：独立开发复杂视频游戏</li>
+            <li>意义：AI自我改进里程碑</li>
         </ul>
     </div>
 
     <h2>🇨🇳 国内/华人圈</h2>
 
     <div class="news-item">
-        <h3><a href="https://www.sinchew.com.my/news/20260206/international/7247580" target="_blank" class="news-link">4. 河南"蝴蝶宝贝"即将迎来25岁生日，曾被告知活不过两岁</a><span class="category">社会</span></h3>
-        <p class="summary">河南郑州的高尚好是一位重度营养不良型遗传性大疱性表皮松解症（EB）患者，出生时下肢皮肤缺失，曾被断言"活不过两岁"，历经5次分指手术，即将迎来25岁生日。</p>
-        <p><span class="source">来源: 星洲日报</span></p>
+        <div class="meta">
+            <span class="category-badge social">社会</span>
+            <span class="source">星洲日报</span>
+            <span class="time">17小时前</span>
+        </div>
+        <h3><a href="https://www.sinchew.com.my/news/20260206/international/7247580" target="_blank" class="news-link">9. 河南"蝴蝶宝贝"高尚好即将迎来25岁生日，曾被告知活不过两岁</a></h3>
+        <p class="summary">河南郑州的高尚好是一位重度营养不良型<strong>遗传性大疱性表皮松解症（EB）</strong>患者，2001年出生时下肢皮肤缺失，右眼失明，被医生断言<strong>"活不过两岁"</strong>。历经5次分指手术、166天ICU，她即将迎来25岁生日，体重仅30公斤，无法直立行走但坚强乐观。</p>
         <ul>
-            <li>病症：遗传性大疱性表皮松解症（EB）</li>
+            <li>病症：遗传性大疱性表皮松解症（EB，俗称"蝴蝶宝贝"）</li>
             <li>医生预言：活不过两岁</li>
             <li>现状：即将25岁，经历5次手术</li>
+            <li>身高体重：1.5米，约30公斤</li>
         </ul>
     </div>
 
     <div class="news-item">
-        <h3><a href="https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml" target="_blank" class="news-link">5. 王毅回顾2025年中国外交：维护多边贸易，推动热点问题降温</a><span class="category">国内</span></h3>
-        <p class="summary">王毅表示2025年是联合国成立80周年，中国外交在习近平主席领航下明确抵制单边保护主义，有力维护多边贸易体制，持续为变乱交织世界提供确定性。</p>
-        <p><span class="source">来源: 中国外交部</span></p>
+        <div class="meta">
+            <span class="category-badge domestic">国内</span>
+            <span class="source">中国外交部</span>
+            <span class="time">2天前</span>
+        </div>
+        <h3><a href="https://www.mfa.gov.cn/wjbzhd/202602/t20260205_11851995.shtml" target="_blank" class="news-link">10. 王毅回顾2025中国外交：抵制单边主义，维护多边贸易，推动热点降温</a></h3>
+        <p class="summary">外交部长王毅表示<strong>2025年是联合国成立80周年</strong>，中国外交在习近平主席领航下明确抵制单边保护主义，有力维护多边贸易体制，积极推动热点问题停火降温。中国持续为变乱交织的世界提供"稀缺的确定性和宝贵的建设性"。</p>
         <ul>
-            <li>2025：联合国成立80周年</li>
+            <li>2025重大节点：联合国成立80周年</li>
             <li>中国立场：抵制单边主义，维护多边贸易</li>
+            <li>外交成就：推动热点问题停火降温</li>
             <li>承诺：为世界提供确定性和建设性</li>
         </ul>
     </div>
 
     <hr>
 
-    <p><strong>数据引擎:</strong> Brave Search API · 实时中文新闻聚合</p>
-    <p><strong>API状态:</strong> 免费计划 · 剩余 1998/2000 次/月</p>
-
-    <p class="footer">由 Krowbat 🦇 为你实时搜索整理 · 2026-02-06</p>
+    <div class="footer">
+        <p><strong>数据引擎：</strong>Brave Search API · 免费计划</p>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">10</div>
+                <div class="stat-label">篇精选</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5</div>
+                <div class="stat-label">大类别</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">新闻源</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1996</div>
+                <div class="stat-label">剩余额度</div>
+            </div>
+        </div>
+        <p style="margin-top: 25px;">由 <strong>Krowbat</strong> 🦇 为你实时搜索整理 · 2026-02-06</p>
+    </div>
 </body>
 </html>
