@@ -1,0 +1,76 @@
+{
+  "date": "2026-02-06",
+  "sources": ["BBC", "CBC Edmonton"],
+  "items": [
+    {
+      "title": "美伊核谈判：伊朗外长称"良好的开端"，会谈将继续",
+      "url": "https://www.bbc.com/news/articles/cr57g1y8286o",
+      "source": "BBC",
+      "category": "国际",
+      "summary": "伊朗外长阿巴斯·阿拉格奇表示，与美国的会谈将继续，双方在阿曼进行了数小时的谈判，虽然进入谈判时的立场差异显著。"
+    },
+    {
+      "title": "俄罗斯将军在莫斯科遭多次枪击",
+      "url": "https://www.bbc.com/news/articles/c3686nzexp3o",
+      "source": "BBC",
+      "category": "国际",
+      "summary": "俄罗斯军事情报总局高级官员弗拉基米尔·阿列克谢耶夫中将在莫斯科郊区遭枪击受伤。"
+    },
+    {
+      "title": "2026年米兰-科尔蒂纳冬奥会今晚开幕",
+      "url": "https://www.bbc.com/sport/articles/cj0nl5g83zlo",
+      "source": "BBC",
+      "category": "体育",
+      "summary": "第26届冬季奥运会开幕式将于周五举行，未来16天全球体育迷将聚焦于米兰-科尔蒂纳运动会。"
+    },
+    {
+      "title": "特朗普撤下含种族主义视频的推文",
+      "url": "https://www.bbc.com/news/articles/ce8r8y78g10o",
+      "source": "BBC",
+      "category": "美国",
+      "summary": "特朗普撤下了一段将奥巴马夫妇描绘成猿猴的有争议视频，此前一位黑人共和党参议员称其为"白宫发出的最种族主义的东西"。"
+    },
+    {
+      "title": "加拿大和法国将在格陵兰开设领事馆",
+      "url": "https://www.bbc.com/news/articles/c0r4lrly44xo",
+      "source": "BBC",
+      "category": "国际",
+      "summary": "在美国总统特朗普表示希望收购格陵兰之前，两国就已经计划开设领事馆，但现在这被视为对格陵兰人的声援。"
+    },
+    {
+      "title": "Luigi Mangione在纽约庭审后抗议"同一审判两次"",
+      "url": "https://www.bbc.com/news/articles/czjgj3pwjxgo",
+      "source": "BBC",
+      "category": "美国",
+      "summary": "被指控杀害保险公司CEO的曼吉奥内在离开纽约法庭时高呼"同一审判两次"，抗议审判日期确定。"
+    },
+    {
+      "title": "巴基斯坦清真寺爆炸致30余人死亡",
+      "url": "https://www.bbc.com/news/articles/cg7y7gz2835o",
+      "source": "BBC",
+      "category": "国际",
+      "summary": "巴基斯坦官员称，一起爆炸袭击清真寺事件已造成30多人死亡。"
+    },
+    {
+      "title": "他汀类药物比宣传更安全，英国大型研究发现",
+      "url": "https://www.bbc.com/news/articles/c80142p2g00o",
+      "source": "BBC",
+      "category": "健康",
+      "summary": "英国一项大型审查发现，广泛使用的降胆固醇药物他汀比此前认为的要安全得多。"
+    },
+    {
+      "title": "加拿大国家铁路列车在阿尔伯塔中部脱轨",
+      "url": "https://www.cbc.ca/news/canada/edmonton/cn-train-derailment-wildwood-alta-tsb-9.7077135",
+      "source": "CBC Edmonton",
+      "category": "本地新闻",
+      "summary": "加拿大交通安全委员会派遣调查组前往阿尔伯塔，37节火车车厢周四在埃德蒙顿以西的Wildwood附近脱轨。"
+    },
+    {
+      "title": "前卡尔加里法官反驳阿尔伯塔省长对司法任命的批评",
+      "url": "https://www.cbc.ca/news/canada/edmonton",
+      "source": "CBC Edmonton",
+      "category": "本地新闻",
+      "summary": "一位前卡尔加里法官加入加拿大法律专家行列，批评阿尔伯塔省长丹妮尔·史密斯威胁要削减经费，除非省在联邦法官任命中有更多发言权。"
+    }
+  ]
+}
