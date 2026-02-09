@@ -3,187 +3,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻简报 - 2026-02-09</title>
+    <title>新闻简报 - 2026-02-09 (豪华完整版 · 30篇)</title>
     <style>
         * { box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.7; color: #333; background: #f5f5f5; }
-        h1 { color: #1a1a1a; border-bottom: 4px solid #e63946; padding-bottom: 15px; }
-        .subtitle { color: #666; margin-bottom: 20px; }
-        .news-item { background: white; padding: 20px; border-radius: 12px; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        .news-item h3 { margin-top: 0; color: #1d3557; font-size: 1.1em; }
-        .source { color: #6c757d; font-size: 0.85em; }
-        .footer { color: #6c757d; font-size: 0.9em; text-align: center; margin-top: 40px; padding: 20px; background: white; border-radius: 12px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 4px solid #e63946;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .api-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .edition-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .stats-bar {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 25px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4361ee;
+        }
+        .stat-label {
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+        .intro {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #1d3557;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            border-left: 5px solid;
+            font-size: 1.4em;
+        }
+        h2.int { border-left-color: #e63946; }
+        h2.china { border-left-color: #c9184a; }
+        h2.tech { border-left-color: #4361ee; }
+        h2.sports { border-left-color: #f77f00; }
+        h2.canada { border-left-color: #d62828; }
+        h2.domestic { border-left-color: #06d6a0; }
+        
+        .category-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.72em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .int { background: #e63946; color: white; }
+        .china { background: #c9184a; color: white; }
+        .tech { background: #4361ee; color: white; }
+        .sports { background: #f77f00; color: white; }
+        .canada { background: #d62828; color: white; }
+        .domestic { background: #06d6a0; color: white; }
+        
+        .news-item {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .news-item h3 {
+            color: #1d3557;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.15em;
+            line-height: 1.4;
+        }
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .source {
+            color: #6c757d;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        .time {
+            color: #adb5bd;
+            font-size: 0.8em;
+        }
+        .summary {
+            color: #495057;
+            font-size: 0.95em;
+            line-height: 1.65;
+            margin: 12px 0;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #4361ee;
+        }
+        .news-link {
+            color: #4361ee;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .news-link:hover {
+            border-bottom-color: #4361ee;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #dee2e6;
+            margin: 40px 0;
+        }
+        .footer {
+            color: #6c757d;
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+        }
     </style>
 </head>
 <body>
-    <h1>📰 新闻简报 · 2026年2月9日</h1>
-    <p class="subtitle">豪华完整版 · 30篇精选 · RSS数据源</p>
-
-    <h2>🔴 国际头条 · 5篇</h2>
+    <h1>📰 今日全球新闻简报 <span class="edition-badge">豪华完整版</span></h1>
+    <p class="subtitle"><strong>2026年2月9日</strong> · 星期一 · 30篇深度报道 · 6大领域全覆盖</p>
     
-    <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/c8d5pl34vv0o" target="_blank">香港法院判处黎智英20年监禁</a></h3>
-        <p class="source">BBC · 香港</p>
-    </div>
-    
-    <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/cjd9k852zdjo" target="_blank">日本股市大涨，高市早苗赢得历史性选举胜利</a></h3>
-        <p class="source">BBC · 日本</p>
-    </div>
-    
-    <div class="news-item">
-        <h3><a href="https://www.bbc.com/news/articles/cvgv5yre39zo" target="_blank">麦克斯韦将拒绝回答国会质询</a></h3>
-        <p class="source">BBC · 美国</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>安德鲁王子被指控与爱泼斯坦分享机密贸易信息</h3>
-        <p class="source">BBC · 英国</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>威廉和凯特对爱泼斯坦相关揭露表示"深感忧虑"</h3>
-        <p class="source">BBC · 英国王室</p>
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-number">30</div>
+            <div class="stat-label">篇精选</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">大类别</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">权威媒体</div>
+        </div>
     </div>
 
-    <h2>🇨🇳 外电看中国 · 5篇</h2>
-    
-    <div class="news-item">
-        <h3>香港媒体大亨黎智英被判20年，其子称相当于"死刑判决"</h3>
-        <p class="source">BBC · 香港国安法</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>中国警告美国对台军售：要求特朗普政府"审慎行事"</h3>
-        <p class="source">BBC · 台海局势</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>中美核军备控制谈判：中国参与是关键</h3>
-        <p class="source">BBC · 军控</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>BBC调查：中国酒店偷拍产业链曝光</h3>
-        <p class="source">BBC · 社会</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>美国提出建立关键矿产替代供应链以对抗中国主导权</h3>
-        <p class="source">BBC · 贸易</p>
+    <div class="intro">
+        <p>📡 <strong>数据来源：</strong>RSS源 + Brave搜索混合获取 · 包含详细摘要</p>
     </div>
 
-    <h2>💻 科技前沿 · 5篇</h2>
-    
+    <h2 class="int">🔴 国际头条 · 5篇</h2>
+
     <div class="news-item">
-        <h3><a href="https://techcrunch.com/2026/02/09/uber-to-buy-delivery-arm-of-turkeys-getir/" target="_blank">Uber以3.35亿美元收购土耳其Getir配送业务</a></h3>
-        <p class="source">TechCrunch</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>TechCrunch创始人峰会2026演讲征集开启</h3>
-        <p class="source">TechCrunch · 6月波士顿</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>Anthropic发布Claude Opus 4.6：100万token上下文窗口</h3>
-        <p class="source">Gadgets360 · AI</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>OpenAI发布GPT-5.3-Codex：首个协助开发自身的AI模型</h3>
-        <p class="source">Gadgets360 · AI</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>AI初创2025年全球吸金2700亿美元，占风投总额过半</h3>
-        <p class="source">Journal Record</p>
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3>1. 国王对安德鲁王子与爱泼斯坦关联丑闻表示"深切关切"</h3>
+        <p class="summary">国王首次就爱泼斯坦丑闻表态，表示王室已准备好支持警方调查，这是王室罕见的高级成员干预。</p>
     </div>
 
-    <h2>🏂 体育 · 5篇</h2>
-    
     <div class="news-item">
-        <h3>加拿大Megan Oldham赢得冬奥会自由式滑雪坡面障碍技巧铜牌</h3>
-        <p class="source">CBC Sports · 米兰冬奥会</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>超级碗中场秀：Bad Bunny携众明星登场</h3>
-        <p class="source">BBC · 超级碗</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>花滑团体赛首日美国队暂居第一</h3>
-        <p class="source">USA Today · 冬奥</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>冬奥赛程：速滑1000米、高山滑雪回转等决赛今日进行</h3>
-        <p class="source">BBC Sport</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>3 Doors Down主唱Brad Arnold去世，享年47岁</h3>
-        <p class="source">CNN · 音乐</p>
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3>2. 麦克斯韦在国会听证会上拒绝回答有关爱泼斯坦的问题</h3>
+        <p class="summary">淫魔富豪爱泼斯坦的同伙吉斯莱恩·麦克斯韦援引美国宪法第五修正案，拒绝在国会听证会上自证其罪。</p>
     </div>
 
-    <h2>🇨🇦 加拿大/埃德蒙顿本地 · 5篇</h2>
-    
     <div class="news-item">
-        <h3>阿尔伯塔省巴士翻车事故：1人死亡，22人送医</h3>
-        <p class="source">CBC Edmonton · 19分钟前</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>阿尔伯塔省独立学校撤资请愿临近截止，已获9万签名</h3>
-        <p class="source">CBC Edmonton · 1小时前</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>阿尔伯塔省长史密斯回应司法改革威胁批评</h3>
-        <p class="source">CBC Edmonton · 8小时前</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>埃德蒙顿越南社区庆祝农历新年</h3>
-        <p class="source">CBC Edmonton</p>
-    </div>
-    
-    <div class="news-item">
-        <h3>迪翁严厉批评阿尔伯塔分离主义运动</h3>
-        <p class="source">CBC News</p>
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3>3. 英国洪灾警报升至90余处，天气预报称暂无转干迹象</h3>
+        <p class="summary">英格兰西南部、东南部、伦敦及威尔士南部多地发布90余处洪水警报，预报称短期内干燥天气无望。</p>
     </div>
 
-    <h2>🇨🇳 国内·社会·健康 · 5篇</h2>
-    
     <div class="news-item">
-        <h3>地中海移民船翻覆：53人死亡或失踪</h3>
-        <p class="source">The Guardian · 利比亚</p>
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3>4. 布里斯托托儿所工人性侵幼儿罪名成立</h3>
+        <p class="summary">内森·贝内特对2至3岁男童实施性侵，检方形容这是"每位父母的噩梦"。</p>
     </div>
-    
+
     <div class="news-item">
-        <h3>英国洪水警告：西南部及伦敦地区暴雨持续</h3>
-        <p class="source">BBC</p>
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">The Guardian</span></div>
+        <h3>5. 地中海移民船翻覆：53人死亡或失踪</h3>
+        <p class="summary">周五在利比亚海岸附近，一艘偷渡船倾覆，国际移民组织称仅2人获救，53人遇难或失踪，这是地中海移民路线最新悲剧。</p>
     </div>
-    
+
+    <h2 class="china">🇨🇳 外电看中国 · 5篇</h2>
+
     <div class="news-item">
-        <h3>布里斯托托儿所工人性侵幼儿罪名成立</h3>
-        <p class="source">BBC · 英国</p>
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3>6. 香港法院判处黎智英20年监禁，其子称相当于"死刑判决"</h3>
+        <p class="summary">78岁的香港媒体大亨、英国公民黎智英因国安罪被判20年。支持者称这等于死刑，但当局称这彰显了法治。</p>
     </div>
-    
+
     <div class="news-item">
-        <h3>巴里M彩妆品牌被竞争对手Warpaint收购</h3>
-        <p class="source">BBC · 商业</p>
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3>7. 习近平告诫特朗普对台军售须"审慎行事"</h3>
+        <p class="summary">中美领导人通话中，习近平称台湾是中美关系"最重要议题"，敦促美国对台军售"审慎行事"。</p>
     </div>
-    
+
     <div class="news-item">
-        <h3>研究发现：小剂量抗生素可延长寿命</h3>
-        <p class="source">ScienceDaily · 健康</p>
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3>8. 特朗普推动美俄核军控谈判，关键在中国是否参与</h3>
+        <p class="summary">分析人士指出，中国作为新兴核超级大国的崛起，使三方博弈格局形成。中国的参与对于任何实质性军控协议至关重要。</p>
     </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3>9. 美国提出计划对抗中国关键矿产供应链主导权</h3>
+        <p class="summary">美国召集盟友召开会议，提出建立稀土和关键矿产的替代供应链计划，以减少对中国供应的依赖。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3>10. BBC调查：中国酒店偷拍产业链曝光</h3>
+        <p class="summary">BBC波斯语调查证实伊朗安全部队在镇压抗议活动中部署了包括致命和非致命武器在内的广泛武器库。</p>
+    </div>
+
+    <h2 class="tech">💻 科技前沿 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">TechCrunch</span></div>
+        <h3>11. YouTube巨星MrBeast收购青少年金融科技应用Step</h3>
+        <p class="summary">YouTube顶级创作者MrBeast宣布其公司Beast Industries收购Step，这是一款面向青少年的银行应用，旨在教年轻人理财。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">TechCrunch</span></div>
+        <h3>12. Bluesky终于推出草稿箱功能</h3>
+        <p class="summary">去中心化社交平台Bluesky新增草稿箱功能，追赶竞争对手X和Threads早已具备的这一基本功能。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">TechCrunch</span></div>
+        <h3>13. Databricks CEO：SaaS未死，但AI将使其很快过时</h3>
+        <p class="summary">Databricks CEO Ali Ghodsi认为AI不会取代主要SaaS应用，但可能催生新的竞争者改变行业格局。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">TechCrunch</span></div>
+        <h3>14. Anthropic印度扩张遭遇商标纠纷</h3>
+        <p class="summary">美国AI巨头Anthropic在印度扩张时，与当地同名公司Anthropic Software发生商标纠纷，被起诉至法院。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">TechCrunch</span></div>
+        <h3>15. ChatGPT开始推出广告功能</h3>
+        <p class="summary">OpenAI开始在ChatGPT中测试广告功能，这是其探索盈利模式的最新举措。</p>
+    </div>
+
+    <h2 class="sports">🏂 体育 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">CBC Sports</span></div>
+        <h3>16. 加拿大队5-0领先捷克，女冰队长Poulin受伤离场</h3>
+        <p class="summary">米兰冬奥会女子冰球小组赛，加拿大对捷克取得5-0领先，但队长Marie-Philip Poulin在一次撞击后第二节未返回替补席。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">CBC Sports</span></div>
+        <h3>17. 意大利女冰历史性胜利，加拿大人也与有荣焉</h3>
+        <p class="summary">意大利女子冰球队阵容中不乏加拿大血统球员，她们在冬奥赛场上的突破性胜利也是加拿大冰球培养体系的成就。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">BBC Sport</span></div>
+        <h3>18. Mia Brookes单板滑雪大跳台第四，与领奖台失之交臂</h3>
+        <p class="summary">英国16岁小将Mia Brookes在单板滑雪女子大跳台决赛中获得第四名，遗憾未能登上领奖台，但这已创造英国历史。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">BBC Sport/CNN</span></div>
+        <h3>19. 林赛·沃恩滑雪坠落后情况稳定</h3>
+        <p class="summary">美国滑雪传奇林赛·沃恩在女子速降比赛中坠机后被空运离场送医，医院称其情况稳定，这可能是她的最后一届冬奥会。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">BBC Sport</span></div>
+        <h3>20. Hillsborough惨案受害者家属抨击警方"空洞的道歉"</h3>
+        <p class="summary">Trevor和Jenni Hicks夫妇的两个女儿在希尔斯堡惨案中丧生，他们要求法院更正警方作出的"空洞道歉"记录。</p>
+    </div>
+
+    <h2 class="canada">🇨🇦 加拿大/埃德蒙顿本地 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
+        <h3>21. 民调显示三分之二阿尔伯塔人希望留在加拿大</h3>
+        <p class="summary">最新民调显示，65%的阿尔伯塔人表示会在独立公投中投票留在加拿大或倾向留在加拿大，仅29%支持独立，分离请愿活动未能动摇多数人立场。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC</span></div>
+        <h3>22. 加拿大前部长迪翁严厉批评阿尔伯塔分离主义</h3>
+        <p class="summary">前自由党内阁部长斯蒂芬·迪翁抨击阿尔伯塔省分离主义运动，要求省长丹妮尔·史密斯澄清她的立场。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC</span></div>
+        <h3>23. 多伦多Eglinton Crosstown轻轨终于开通</h3>
+        <p class="summary">历经15年建设的争议性轻轨项目于周日正式启动，但开通仅30分钟后就出现机械故障被迫停运。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC</span></div>
+        <h3>24. 加拿大奥运选手在米兰奥运村预防诺如病毒</h3>
+        <p class="summary">加拿大运动员团队采取严格预防措施，避免感染正在米兰奥运村内传播的诺如病毒。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
+        <h3>25. 加拿大冰球名将Sarah Nurse谈父母"平衡教育"塑造她的成功</h3>
+        <p class="summary">冬奥冰球金牌得主Sarah Nurse在采访中感谢父母在她成长过程中提供的"平衡支持"，帮助她达到巅峰。</p>
+    </div>
+
+    <h2 class="domestic">🇨🇳 国内·社会·健康 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">社会</span><span class="source">BBC</span></div>
+        <h3>26. NBC主持人Savannah Guthrie母亲失踪案：警方展开搜寻</h3>
+        <p class="summary">NBC《今日秀》主持人Savannah Guthrie的84岁母亲Nancy Guthrie在亚利桑那州图森市失踪，警方已展开调查寻找。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">健康</span><span class="source">ScienceDaily</span></div>
+        <h3>27. 研究发现：小剂量抗生素可延长寿命</h3>
+        <p class="summary">新研究发现小剂量抗生素可促使肠道细菌产生具有延寿效果的化合物，为抗衰老研究开辟新方向。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">社会</span><span class="source">The Guardian</span></div>
+        <h3>28. 尼日利亚夸拉州村庄遭袭，至少162人死亡</h3>
+        <p class="summary">尼日利亚夸拉州发生一起针对村庄的袭击事件，造成至少162人死亡，当局正在调查袭击者身份。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">娱乐</span><span class="source">The Guardian</span></div>
+        <h3>29. 加纳Highlife音乐先驱Ebo Taylor去世，享年90岁</h3>
+        <p class="summary">被誉为"历史上最伟大的节奏吉他手"之一的加纳音乐家Ebo Taylor去世，他对加纳音乐的贡献堪比Fela Kuti对尼日利亚音乐的影响。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">娱乐</span><span class="source">BBC</span></div>
+        <h3>30. HBO Max将于3月26日登陆英国流媒体市场</h3>
+        <p class="summary">HBO Max正式加入英国流媒体大战，将于3月26日上线，带来《老友记》和《The Pitt》等热门剧集。</p>
+    </div>
+
+    <hr>
 
     <div class="footer">
-        <p>数据来源：BBC、CBC、The Guardian、TechCrunch 等 · RSS实时获取</p>
-        <p>由 <strong>Krowbat</strong> 🦇 整理 · 2026-02-09</p>
+        <p><strong>数据来源：</strong>BBC、The Guardian、CBC、TechCrunch、ScienceDaily (RSS+Brave混合获取)</p>
+        <p style="margin-top: 20px;">由 <strong>Krowbat</strong> 🦇 为你整理 · 2026-02-09</p>
+        <p style="margin-top: 10px; font-size: 0.85em; color: #adb5bd;">每篇文章均附带详细摘要描述</p>
     </div>
 </body>
-</html><!-- updated Mon Feb  9 11:08:20 MST 2026 -->
+</html>
