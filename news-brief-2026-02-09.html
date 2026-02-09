@@ -27,16 +27,6 @@
             font-size: 1.1em;
             margin-bottom: 20px;
         }
-        .api-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: bold;
-            margin-left: 10px;
-        }
         .edition-badge {
             display: inline-block;
             background: #ffd700;
@@ -124,11 +114,20 @@
             box-shadow: 0 4px 16px rgba(0,0,0,0.1);
         }
         .news-item h3 {
-            color: #1d3557;
             margin-top: 0;
             margin-bottom: 10px;
             font-size: 1.15em;
             line-height: 1.4;
+        }
+        .news-item h3 a {
+            color: #1d3557;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .news-item h3 a:hover {
+            color: #4361ee;
+            border-bottom-color: #4361ee;
         }
         .meta {
             display: flex;
@@ -142,10 +141,6 @@
             font-size: 0.85em;
             font-weight: 500;
         }
-        .time {
-            color: #adb5bd;
-            font-size: 0.8em;
-        }
         .summary {
             color: #495057;
             font-size: 0.95em;
@@ -156,14 +151,15 @@
             border-radius: 6px;
             border-left: 3px solid #4361ee;
         }
-        .news-link {
+        .read-more {
+            display: inline-block;
+            margin-top: 8px;
             color: #4361ee;
+            font-size: 0.9em;
             text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s;
         }
-        .news-link:hover {
-            border-bottom-color: #4361ee;
+        .read-more:hover {
+            text-decoration: underline;
         }
         hr {
             border: none;
@@ -201,14 +197,14 @@
     </div>
 
     <div class="intro">
-        <p>📡 <strong>数据来源：</strong>RSS源 + Brave搜索混合获取 · 包含详细摘要</p>
+        <p>📡 <strong>数据来源：</strong>RSS源 + Brave搜索混合获取 · 包含详细摘要与原文链接</p>
     </div>
 
     <h2 class="int">🔴 国际头条 · 5篇</h2>
 
     <div class="news-item">
         <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
-        <h3><a href="https://www.bbc.com/news/articles/cqlgv3z79klo" target="_blank" style="color:#4361ee;">1. 国王对安德鲁王子与爱泼斯坦关联丑闻表示"深切关切"</a></h3>
+        <h3><a href="https://www.bbc.com/news/articles/cqlgv3z79klo" target="_blank">1. 国王对安德鲁王子与爱泼斯坦关联丑闻表示"深切关切"</a></h3>
         <p class="summary">国王首次就爱泼斯坦丑闻表态，表示王室已准备好支持警方调查，这是王室罕见的高级成员干预。</p>
     </div>
 
@@ -265,7 +261,7 @@
     <div class="news-item">
         <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
         <h3><a href="https://www.bbc.com/news/articles/c62rexy9y3no" target="_blank">10. BBC调查：中国酒店偷拍产业链曝光</a></h3>
-        <p class="summary">BBC波斯语调查证实伊朗安全部队在镇压抗议活动中部署了包括致命和非致命武器在内的广泛武器库。</p>
+        <p class="summary">调查揭示中国偷拍产业链规模庞大，涉及偷拍设备销售、内容分发平台和地下付费社群。</p>
     </div>
 
     <h2 class="tech">💻 科技前沿 · 5篇</h2>
@@ -321,8 +317,8 @@
     </div>
 
     <div class="news-item">
-        <div class="meta"><span class="category-badge sports">体育</span><span class="source">BBC Sport/CNN</span></div>
-        <h3><a href="https://www.bbc.com/sport" target="_blank">19. 林赛·沃恩滑雪坠落后情况稳定</a></h3>
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">BBC Sport</span></div>
+        <h3>19. 林赛·沃恩滑雪坠落后情况稳定</h3>
         <p class="summary">美国滑雪传奇林赛·沃恩在女子速降比赛中坠机后被空运离场送医，医院称其情况稳定，这可能是她的最后一届冬奥会。</p>
     </div>
 
@@ -354,13 +350,13 @@
 
     <div class="news-item">
         <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC</span></div>
-        <h3><a href="https://www.cbc.ca/sports/olympics" target="_blank">24. 加拿大奥运选手在米兰奥运村预防诺如病毒</a></h3>
+        <h3>24. 加拿大奥运选手在米兰奥运村预防诺如病毒</h3>
         <p class="summary">加拿大运动员团队采取严格预防措施，避免感染正在米兰奥运村内传播的诺如病毒。</p>
     </div>
 
     <div class="news-item">
         <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
-        <h3><a href="https://www.cbc.ca/sports/olympics/features/feedthedream" target="_blank">25. 加拿大冰球名将Sarah Nurse谈父母"平衡教育"塑造她的成功</a></h3>
+        <h3>25. 加拿大冰球名将Sarah Nurse谈父母"平衡教育"塑造她的成功</h3>
         <p class="summary">冬奥冰球金牌得主Sarah Nurse在采访中感谢父母在她成长过程中提供的"平衡支持"，帮助她达到巅峰。</p>
     </div>
 
@@ -374,13 +370,13 @@
 
     <div class="news-item">
         <div class="meta"><span class="category-badge domestic">健康</span><span class="source">ScienceDaily</span></div>
-        <h3><a href="https://www.sciencedaily.com" target="_blank">27. 研究发现：小剂量抗生素可延长寿命</a></h3>
+        <h3>27. 研究发现：小剂量抗生素可延长寿命</h3>
         <p class="summary">新研究发现小剂量抗生素可促使肠道细菌产生具有延寿效果的化合物，为抗衰老研究开辟新方向。</p>
     </div>
 
     <div class="news-item">
         <div class="meta"><span class="category-badge domestic">社会</span><span class="source">The Guardian</span></div>
-        <h3><a href="https://www.theguardian.com/world/" target="_blank">28. 尼日利亚夸拉州村庄遭袭，至少162人死亡</a></h3>
+        <h3>28. 尼日利亚夸拉州村庄遭袭，至少162人死亡</h3>
         <p class="summary">尼日利亚夸拉州发生一起针对村庄的袭击事件，造成至少162人死亡，当局正在调查袭击者身份。</p>
     </div>
 
@@ -400,8 +396,8 @@
 
     <div class="footer">
         <p><strong>数据来源：</strong>BBC、The Guardian、CBC、TechCrunch、ScienceDaily (RSS+Brave混合获取)</p>
-        <p style="margin-top: 20px;">由 <strong>Krowbat</strong> 🦇 为你整理 · 2026-02-09</p>
-        <p style="margin-top: 10px; font-size: 0.85em; color: #adb5bd;">每篇文章均附带详细摘要描述</p>
+        <p style="margin-top: 20px;">点击标题 <span style="color:#4361ee;">🔗 即可阅读原文</span></p>
+        <p style="margin-top: 10px;">由 <strong>Krowbat</strong> 🦇 为你整理 · 2026-02-09</p>
     </div>
 </body>
 </html>
