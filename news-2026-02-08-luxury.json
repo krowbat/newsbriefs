@@ -1,0 +1,44 @@
+{
+  "date": "2026-02-08",
+  "edition": "豪华完整版",
+  "total_items": 30,
+  "categories": 6,
+  "items": [
+    {"category": "国际头条", "title": "日本执政党预计在提前选举中赢得多数席位", "summary": "由现任首相高市早苗领导的执政联盟预计将取得决定性胜利", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/cx2y7d2z29xo", "points": ["媒体在投票站关闭后发布的预测显示执政联盟将获胜"]},
+    {"category": "国际头条", "title": "英国首相幕僚长因曼德尔森任命丑闻辞职", "summary": "尽管曼德尔森与爱泼斯坦有联系，英国首相仍任命其为驻美大使，引发政治危机", "sources": ["BBC", "CNN"], "url": "https://www.bbc.com/news/live/c74wd01egvyt", "points": ["摩根·麦克斯威尼宣布辞职"]},
+    {"category": "国际头条", "title": "俄罗斯确认将军遇刺案三名嫌疑人", "summary": "嫌疑人包括据称的枪手柳博米尔·科尔巴，据称已逃往阿联酋", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/cy7j6xe8862o", "points": []},
+    {"category": "国际头条", "title": "意大利警方在冬奥会主办城市米兰逮捕抗议者", "summary": "至少6人被拘留，此前一周都灵也发生了暴力示威", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/cgl5293n5n9o", "points": []},
+    {"category": "国际头条", "title": "泰国大选：保守派在提前选举中领先", "summary": "泰国选民在提前选举中选择，初步结果显示保守派领先", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/cx2jn4z4eq0o", "points": []},
+    
+    {"category": "外电看中国", "title": "习近平与特朗普通话：要求美国对台军售审慎行事", "summary": "中国领导人称台湾是中美关系最重要议题", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/c62wpjd3j1zo", "points": []},
+    {"category": "外电看中国", "title": "特朗普推动美俄核军备控制，关键在中国是否参与", "summary": "分析师指出中国作为新兴核超级大国的崛起使三方博弈格局形成", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/c70l27gy47do", "points": []},
+    {"category": "外电看中国", "title": "美国提出计划对抗中国关键矿产供应链主导权", "summary": "美国召集盟友会议，提出建立稀土和关键矿产替代供应链的计划", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/c5y41r5rzrno", "points": []},
+    {"category": "外电看中国", "title": "中美领导人讨论台湾和大豆：中国考虑增购美国大豆", "summary": "特朗普称与习近平进行非常积极的通话", "sources": ["Reuters"], "url": "https://www.reuters.com", "points": []},
+    {"category": "外电看中国", "title": "BBC调查：中国酒店偷拍产业链，情侣私密被直播给数千人", "summary": "调查揭示中国偷拍产业链规模庞大", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/c62rexy9y3no", "points": []},
+    
+    {"category": "科技前沿", "title": "Anthropic发布Claude Opus 4.6：100万token上下文窗口", "summary": "支持处理整本书或大型代码库，在agentic编码任务上表现大幅提升", "sources": ["Gadgets360"], "url": "https://www.gadgets360.com", "points": []},
+    {"category": "科技前沿", "title": "OpenAI发布GPT-5.3-Codex：首个协助开发自身的AI模型", "summary": "速度更快，可独立开发复杂视频游戏，标志着AI具备自我改进能力", "sources": ["Gadgets360"], "url": "https://www.gadgets360.com", "points": []},
+    {"category": "科技前沿", "title": "AI语音独角兽ElevenLabs融资5亿美元，估值达110亿美元", "summary": "2025年底ARR收入超3.3亿美元，成为AI语音合成领域最大独角兽", "sources": ["eWeek"], "url": "https://www.eweek.com", "points": []},
+    {"category": "科技前沿", "title": "AI初创2025年全球吸金2700亿美元，占风投总额过半", "summary": "首次占据全球风险投资总额50%以上，北美公司领跑", "sources": ["Journal Record"], "url": "https://journalrecord.com", "points": []},
+    {"category": "科技前沿", "title": "分析师警告：2026年AI软件行业将迎来大整合", "summary": "预计并购交易量同比增长30-40%，中端软件公司面临淘汰潮", "sources": ["Business Insider"], "url": "https://www.businessinsider.com", "points": []},
+    
+    {"category": "体育", "title": "林赛·沃恩坠机后情况稳定", "summary": "美国滑雪巨星在女子速降比赛中坠机后被空运离场，这可能是她最后一次参加奥运会", "sources": ["BBC Sport", "CNN"], "url": "https://www.bbc.com/sport/articles/c98q5g51z4no", "points": []},
+    {"category": "体育", "title": "超级碗LX即将开战：海鹰队vs爱国者队", "summary": "经过近一周的预热，美国最大体育赛事即将在旧金山湾区举行", "sources": ["CNN", "BBC Sport"], "url": "https://www.cnn.com", "points": ["Bad Bunny将在中场秀表演"]},
+    {"category": "体育", "title": "花滑团体赛首日：美国队暂居第一，有望卫冕金牌", "summary": "花样滑冰团体赛首日比赛结束，美国队暂居积分榜第一", "sources": ["USA Today"], "url": "https://www.usatoday.com", "points": []},
+    {"category": "体育", "title": "今日冬奥赛程：短道1000米、男子回转、跳台滑雪超团体决赛", "summary": "今日多场决赛包括女子短道速滑1000米、男子高山滑雪回转等", "sources": ["BBC Sport"], "url": "https://www.bbc.com/sport", "points": []},
+    {"category": "体育", "title": "3 Doors Down主唱Brad Arnold去世，享年47岁", "summary": "格莱美提名摇滚乐队主唱去世，乐队曾以Kryptonite等歌曲闻名", "sources": ["CNN"], "url": "https://www.cnn.com", "points": []},
+    
+    {"category": "加拿大/埃德蒙顿本地", "title": "加拿大前部长迪翁严厉批评阿尔伯塔分离主义运动", "summary": "前自由党内阁部长斯特凡·迪翁抨击阿尔伯塔省的分离主义运动，要求省长丹妮尔·史密斯澄清其立场", "sources": ["CBC"], "url": "https://www.cbc.ca/news/politics/stephane-dion-alberta-separation-clarity-act-9.7079149", "points": []},
+    {"category": "加拿大/埃德蒙顿本地", "title": "多伦多Eglinton Crosstown轻轨终于开通", "summary": "经历15年建设的争议性轻轨项目于周日正式启动", "sources": ["CBC"], "url": "https://www.cbc.ca/news/canada/toronto/eglinton-crosstown-feb-8-opening-9.7077697", "points": ["开通仅30分钟后就出现机械故障"]},
+    {"category": "加拿大/埃德蒙顿本地", "title": "CN货运列车在Wildwood附近脱轨：37节车厢出轨", "summary": "加拿大国家铁路公司一列货运列车在埃德蒙顿以西的Wildwood附近脱轨", "sources": ["CBC Edmonton"], "url": "https://www.cbc.ca/news/canada/edmonton", "points": []},
+    {"category": "加拿大/埃德蒙顿本地", "title": "皇家亚历山德拉医院助产士服务将继续", "summary": "原本计划全部迁至Fort Saskatchewan的服务，经协商后将以修改后的形式继续在医院提供", "sources": ["CBC Edmonton"], "url": "https://www.cbc.ca/news/canada/edmonton", "points": []},
+    {"category": "加拿大/埃德蒙顿本地", "title": "埃德蒙顿越南社区庆祝农历新年", "summary": "埃德蒙顿越南社区在新年正式开始前举行盛大庆祝活动", "sources": ["CBC Edmonton"], "url": "https://www.cbc.ca/news/canada/edmonton", "points": []},
+    
+    {"category": "国内/社会/健康", "title": "NBC主持人母亲失踪：警方认为84岁老人仍在外面某处", "summary": "NBC《今日秀》主持人Savannah Guthrie的84岁母亲Nancy Guthrie在亚利桑那州图森家中失踪", "sources": ["BBC"], "url": "https://www.bbc.com/news/articles/ce9y99eg0nno", "points": []},
+    {"category": "国内/社会/健康", "title": "加拿大奥运选手在米兰奥运村预防诺如病毒", "summary": "加拿大运动员在米兰奥运村采取预防措施，避免感染正在传播的诺如病毒", "sources": ["CBC"], "url": "https://www.cbc.ca/sports/olympics", "points": []},
+    {"category": "国内/社会/健康", "title": "尼日利亚夸拉州村庄遭袭，至少162人死亡", "summary": "尼日利亚夸拉州村庄发生袭击事件，造成至少162人死亡", "sources": ["AP News"], "url": "https://apnews.com", "points": []},
+    {"category": "国内/社会/健康", "title": "瓦伦西亚狂欢节启动，威尼斯庆祝开始", "summary": "西班牙瓦伦西亚狂欢节威尼斯分场活动正式启动", "sources": ["AP News"], "url": "https://apnews.com", "points": []},
+    {"category": "国内/社会/健康", "title": "研究发现：小剂量抗生素可延长寿命", "summary": "研究人员发现小剂量抗生素可促使肠道细菌产生延寿化合物", "sources": ["ScienceDaily"], "url": "https://www.sciencedaily.com", "points": []}
+  ],
+  "sources": ["BBC", "CNN", "Reuters", "CBC", "USA Today", "Gadgets360", "eWeek", "AP News", "ScienceDaily"]
+}
