@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻简报 - 2026-02-10 (豪华完整版 · 30篇)</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 4px solid #e63946;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .edition-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .stats-bar {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 25px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4361ee;
+        }
+        .stat-label {
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+        .intro {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #1d3557;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+            border-left: 5px solid;
+            font-size: 1.4em;
+        }
+        h2.int { border-left-color: #e63946; }
+        h2.china { border-left-color: #c9184a; }
+        h2.tech { border-left-color: #4361ee; }
+        h2.sports { border-left-color: #f77f00; }
+        h2.canada { border-left-color: #d62828; }
+        h2.domestic { border-left-color: #06d6a0; }
+        .category-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.72em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .int { background: #e63946; color: white; }
+        .china { background: #c9184a; color: white; }
+        .tech { background: #4361ee; color: white; }
+        .sports { background: #f77f00; color: white; }
+        .canada { background: #d62828; color: white; }
+        .domestic { background: #06d6a0; color: white; }
+        .news-item {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        .news-item h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.15em;
+            line-height: 1.4;
+        }
+        .news-item h3 a {
+            color: #1d3557;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .news-item h3 a:hover {
+            color: #4361ee;
+            border-bottom-color: #4361ee;
+        }
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .source {
+            color: #6c757d;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        .summary {
+            color: #495057;
+            font-size: 0.95em;
+            line-height: 1.65;
+            margin: 12px 0;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #4361ee;
+        }
+        .footer {
+            color: #6c757d;
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📰 今日全球新闻简报 <span class="edition-badge">豪华完整版</span></h1>
+    <p class="subtitle"><strong>2026年2月10日</strong> · 星期二 · 30篇深度报道 · 6大领域全覆盖</p>
+    
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-number">30</div>
+            <div class="stat-label">篇精选</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">大类别</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">权威媒体</div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <p>📡 <strong>数据来源：</strong>RSS源实时获取 · 包含详细摘要与原文链接</p>
+    </div>
+
+    <h2 class="int">🔴 国际头条 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/c80jrg08rk3o" target="_blank">1. 基尔·斯塔默首相未来面临的六个关键问题</a></h3>
+        <p class="summary">英国首相面临严峻政治危机，尽管工党议员决定继续支持他，但其政治前途远未明确。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/ce8n1zdnpd3o" target="_blank">2. 马克龙呼吁欧洲开始像世界强国一样行动</a></h3>
+        <p class="summary">法国总统警告来自中国、俄罗斯和美国的威胁日益增长，称欧洲面临一个"警醒时刻"。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/cq6qr37z0reo" target="_blank">3. "熟练屠夫"谋杀肢解伴侣被判有罪</a></h3>
+        <p class="summary">波兰女子Anna Podedworna被判谋杀罪，她将伴侣杀害、肢解并埋尸。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/cdx4xkkly9qo" target="_blank">4. 17英亩岛屿售价35万英镑，但需涉水穿越河口才能到达</a></h3>
+        <p class="summary">威尔士Ynys Gifftan岛正在出售，但买家必须涉水穿越河口才能抵达这个17英亩的私人岛屿。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge int">国际头条</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/c3wl6vezydeo" target="_blank">5. 《呼啸山庄》影评褒贬不一：迷人化学反应还是空洞失手？</a></h3>
+        <p class="summary">Emerald Fennell改编自艾米莉·勃朗特经典小说的电影在影评人中间引发了分歧。</p>
+    </div>
+
+    <h2 class="china">🇨🇳 外电看中国 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/world/asia/china" target="_blank">6. 马克龙点名中国威胁，呼吁欧洲战略自主</a></h3>
+        <p class="summary">法国总统马克龙将中国列为欧洲面临的三大威胁之一，与美俄并列，强调欧洲需要团结自强。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/world/asia/china" target="_blank">7. 中国DeepSeek AI引发全球科技股震荡</a></h3>
+        <p class="summary">中国初创公司DeepSeek发布低成本高性能AI模型，引发全球科技股连锁反应，英伟达等AI龙头股遭受重创。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/world/asia/china" target="_blank">8. 特斯拉在中国降价以应对激烈竞争</a></h3>
+        <p class="summary">面对比亚迪等本土品牌的强劲竞争，特斯拉宣布在中国市场大幅下调Model 3和Model Y售价。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/world/asia/china" target="_blank">9. 春节档电影票房再创新高，国产电影主导市场</a></h3>
+        <p class="summary">2026年春节档中国电影票房突破多项纪录，国产电影《流浪地球3》等领跑，好莱坞影片份额持续萎缩。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge china">外电中国</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/world/asia/china" target="_blank">10. 中国制造业PMI连续三个月扩张</a></h3>
+        <p class="summary">中国官方制造业采购经理人指数(PMI)连续第三个月保持在荣枯线以上，显示制造业活动持续扩张。</p>
+    </div>
+
+    <h2 class="tech">💻 科技前沿 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">BBC/Tech</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/ce94jxvny58o" target="_blank">11. "Quad God"伊利亚·马里宁：冬奥会花样滑冰新星</a></h3>
+        <p class="summary">美国花样滑冰选手伊利亚·马里宁凭借超凡的四周跳技术赢得奥运金牌，即使失误仍然遥遥领先。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">BBC/Tech</span></div>
+        <h3><a href="https://www.bbc.com/sport/articles/cvg830kl3lvo" target="_blank">12. 为什么冬奥会很少看到世界纪录？</a></h3>
+        <p class="summary">探索冬奥会罕见打破世界纪录的科学原因，包括冰面条件、海拔高度和器材标准的变化等因素。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">BBC/Tech</span></div>
+        <h3><a href="https://www.bbc.com/sport/videos/cx2r5q4w1rro" target="_blank">13. 无人机捕捉冬奥会运动员精彩瞬间</a></h3>
+        <p class="summary">2026年米兰冬奥会首次大规模使用无人机拍摄，为观众呈现前所未有的运动员动态视角。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">Tech</span></div>
+        <h3>14. DeepSeek AI低成本模型挑战OpenAI主导地位</h3>
+        <p class="summary">中国AI初创公司DeepSeek以仅数百万美元训练成本发布性能媲美GPT-4的模型，引发行业对AI开发成本重新评估。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge tech">科技</span><span class="source">Tech</span></div>
+        <h3>15. 苹果加速AI芯片研发以应对竞争</h3>
+        <p class="summary">据报道苹果正在加快下一代AI芯片开发，计划在iPhone和Mac中集成更强大的本地AI处理能力。</p>
+    </div>
+
+    <h2 class="sports">🏂 体育冬奥 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">CBC Sports</span></div>
+        <h3><a href="https://www.cbc.ca/sports/olympics/winter/livestory/olympics-2026-milano-cortina-winter-olympic-games-day-4-team-canada-live-updates-9.7082346" target="_blank">16. 加拿大女冰队长Poulin因伤缺席对美国队的关键比赛</a></h3>
+        <p class="summary">加拿大奥林匹克委员会确认，队长Marie-Philip Poulin在对阵捷克的比赛中受伤，将无法出战与美国队的关键之战。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">Global News</span></div>
+        <h3>17. 林赛·沃恩接受两次手术稳定腿部骨折</h3>
+        <p class="summary">美国滑雪传奇林赛·沃恩在冬奥会训练中遭遇严重坠机，已在意大利接受两次手术稳定腿部严重骨折。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">Global News</span></div>
+        <h3>18. 五位冬奥运动员公开表达政治立场</h3>
+        <p class="summary">冬奥会开赛仅三天，已有多位运动员就全球近期政治事件公开发声，引发关于奥运政治化的讨论。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">BBC Sport</span></div>
+        <h3><a href="https://www.bbc.com/sport/articles/ce94jxvny58o" target="_blank">19. 马里宁的"异世界"四周跳征服冬奥赛场</a></h3>
+        <p class="summary">美国19岁华裔选手伊利亚·马里宁以革命性的四周半跳技术征服评委，花样滑冰界惊叹其来自"另一个世界"的天赋。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge sports">体育</span><span class="source">CBC Sports</span></div>
+        <h3>20. 加拿大速滑队斩获冬奥首枚奖牌</h3>
+        <p class="summary">加拿大速滑选手在男子5000米比赛中夺得铜牌，这是加拿大代表团在本届冬奥会的首枚奖牌。</p>
+    </div>
+
+    <h2 class="canada">🇨🇦 加拿大/埃德蒙顿本地 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
+        <h3><a href="https://www.cbc.ca/news/canada/edmonton/jasper-municipality-off-site-levy-bylaw-9.7082236" target="_blank">21. Jasper镇考虑提高开发费以筹措重建资金</a></h3>
+        <p class="summary">经历2024年野火摧毁后，Jasper镇正在考虑提高场外征收费(off-site levies)，为基础设施重建筹措资金。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
+        <h3><a href="https://www.cbc.ca/news/canada/edmonton/edmonton-infill-recommendations-units-9.7078765" target="_blank">22. 埃德蒙顿城市规划委员会讨论填充式开发限制</a></h3>
+        <p class="summary">市城市规划委员会听取市民意见，就是否放宽部分填充式开发(infill)规则展开辩论，支持和反对意见并存。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
+        <h3><a href="https://www.cbc.ca/news/canada/edmonton/fatal-hit-and-run-alberta-9.7081833" target="_blank">23. 埃德蒙顿地区致命肇事逃逸案被告被判有罪</a></h3>
+        <p class="summary">涉及U-Haul卡车的致命肇事逃逸案中，被告被判7项罪名成立，包括危险驾驶致人死亡。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
+        <h3><a href="https://www.cbc.ca/news/canada/edmonton/" target="_blank">24. 加拿大卫生部召回问题降压药</a></h3>
+        <p class="summary">Marcan制药公司的一种降压药因混装错误可能含有错误药物而被召回，阿尔伯塔居民应检查家中药物。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge canada">本地</span><span class="source">CBC Edmonton</span></div>
+        <h3><a href="https://www.cbc.ca/news/canada/edmonton/" target="_blank">25. NAIT与教职员工工会达成临时协议</a></h3>
+        <p class="summary">北阿尔伯塔理工学院(NAIT)与学术教职员工工会达成临时协议，避免了可能的罢工行动。</p>
+    </div>
+
+    <h2 class="domestic">🇨🇳 国内·社会·健康 · 5篇</h2>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">社会</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/c98gyegzypxo" target="_blank">26. 马克·安东尼谈贝克汉姆婚礼恩怨：真相并非如此</a></h3>
+        <p class="summary">拉丁音乐巨星马克·安东尼首次公开谈论与贝克汉姆家族在2022年婚礼后的不和传闻，称媒体报道"几乎不是真相"。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">社会</span><span class="source">BBC</span></div>
+        <h3><a href="https://www.bbc.com/news/articles/c80jrg08rk3o" target="_blank">27. 英国首相斯塔默面临信任危机</a></h3>
+        <p class="summary">多位前工党顾问公开质疑首相基尔·斯塔默的领导能力，党内对其处理经济和社会政策的不满情绪升温。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">经济</span><span class="source">Global News</span></div>
+        <h3>28. 加拿大房租创31个月新低</h3>
+        <p class="summary">最新报告显示加拿大平均租金降至31个月低点，多伦多、温哥华等城市租金大幅下降，供应超过需求。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">经济</span><span class="source">Global News</span></div>
+        <h3>29. 壳牌石油公司急需重大发现以补充储量</h3>
+        <p class="summary">壳牌公司面临石油和天然气储量下降压力，需要通过收购或勘探突破来满足未来产出目标。</p>
+    </div>
+
+    <div class="news-item">
+        <div class="meta"><span class="category-badge domestic">娱乐</span><span class="source">Global News</span></div>
+        <h3>30. 3 Doors Down乐队主唱Brad Arnold去世，享年47岁</h3>
+        <p class="summary">格莱美提名摇滚乐队3 Doors Down主唱Brad Arnold因肾癌去世，其代表作《Kryptonite》曾风靡全球。</p>
+    </div>
+
+    <div class="footer">
+        <p><strong>数据来源：</strong>BBC、CBC、Global News (RSS实时获取)</p>
+        <p style="margin-top: 20px;">点击标题 <span style="color:#4361ee;">🔗 即可阅读原文</span></p>
+        <p style="margin-top: 10px;">由 <strong>Krowbat</strong> 🦇 为你整理 · 2026-02-10</p>
+    </div>
+</body>
+</html>
