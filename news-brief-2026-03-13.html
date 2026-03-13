@@ -5,115 +5,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新闻简报 - 2026-03-13</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
-        h1 { color: #e63946; border-bottom: 3px solid #e63946; padding-bottom: 10px; }
-        h2 { color: #1d3557; margin-top: 40px; border-left: 4px solid #e63946; padding-left: 15px; }
-        h3 { color: #457b9d; }
-        a { color: #457b9d; text-decoration: none; }
-        a:hover { color: #e63946; text-decoration: underline; }
-        hr { border: none; border-top: 2px solid #eee; margin: 40px 0; }
-        .footer { color: #666; font-style: italic; margin-top: 40px; }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px 60px;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background: #fafafa;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0 40px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 8px;
+            color: #171717;
+        }
+        .header .date {
+            color: #999;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #171717;
+            margin-bottom: 20px;
+            padding-left: 12px;
+            border-left: 4px solid #ff4757;
+        }
+        .article-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            border: 1px solid #f0f0f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .article-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0 0 8px;
+            line-height: 1.4;
+        }
+        .article-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .article-title a:hover {
+            color: #ff4757;
+        }
+        .article-meta {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .article-meta .tag {
+            display: inline-block;
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 8px;
+            color: #666;
+        }
+        .article-quote {
+            background: #fffbe6;
+            border-left: 3px solid #ffd43b;
+            padding: 10px 14px;
+            margin: 10px 0;
+            font-style: italic;
+            color: #666;
+            border-radius: 0 6px 6px 0;
+        }
+        .article-desc {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .article-source {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        .article-source a {
+            color: #ff4757;
+            text-decoration: none;
+        }
+        .article-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        .section-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .tldr {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .tldr h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+            font-weight: 600;
+        }
+        .tldr p {
+            margin: 0;
+            opacity: 0.95;
+            font-size: 15px;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #999;
+            font-size: 13px;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #ff4757;
+            text-decoration: none;
+        }
+        hr {
+            border: none;
+            border-top: 1px dashed #eee;
+            margin: 30px 0;
+        }
+        @media (max-width: 600px) {
+            body { padding: 16px 12px 40px; }
+            .section-title { font-size: 18px; }
+            .article-card { padding: 16px; }
+        }
     </style>
 </head>
 <body>
-<hr>
-<p>created: 2026-03-13T13:43:01-07:00</p>
-<p>tags: [新闻简报，每日简报]</p>
-<p>category: News Briefs</p>
-<hr>
-<h1>新闻简报 2026-03-13</h1>
-<hr>
-<h2>🔴 国际头条</h2>
-<h3>1. 中国两会政府工作报告看点：GDP目标下调传递诸多信号、军费增幅下降、对台措辞升级与缺席高官</h3>
-<p><strong>来源</strong>：BBC 中文  </p>
-<p>图像来源，Getty Images中国国家主席习近平和总理李强3月5日在人大开幕现场。2026年3月5日在外部不确定性增加和内部面临结构转型压力的背景下，中国总理李强在2026年两会上交出了其任内的第三份政府工作报告。这份长达数千字的报告不仅定调了这一年的经济目标，更被视为中国在“十五五”开局之年的政策蓝图。报告中最引人瞩目的是将GDP增长目标设定为区间值，具体增长目标数字为1991年以来最低，并罕见地将财政赤字率维持在历史高位。此外，连续五年国防预算增幅不低于7%，对台论述中用词出现升级。穆迪分析总结认为，此次政府工作报告的整体信号是：中国正在为更为平稳但节奏趋缓的经济扩张做好准备。对于决策者而言，“可持续性”正在取代“速度”，成为增长管理的首要考量。增长目标三年来首次下调今年增速目标的下沿较前两年的“5%左右”有所下移。李强表示，目标设定要为“调结构、防风险、促改革留出空间”。李...</p>
-<p>📖 <a href="https://www.bbc.com/zhongwen/articles/ce8wwj819e5o/simp#4" target="_blank">https://www.bbc.com/zhongwen/articles/ce8wwj819e5o/simp#4</a></p>
-<h3>2. 中国的下一场增长赌局全力押注AI、机器人等“未来产业”</h3>
-<p><strong>来源</strong>：BBC 中文  </p>
-<p>图像来源，Getty Images</p>
-<p>📖 <a href="https://www.bbc.com/zhongwen/articles/cewz7yxrqdgo/simp#6" target="_blank">https://www.bbc.com/zhongwen/articles/cewz7yxrqdgo/simp#6</a></p>
-<h3>3. All six crew members killed after US refuelling plane crashes in Iraq</h3>
-<p><strong>来源</strong>：BBC World  </p>
-<p>The US Central Command says all six crew members died after a refuelling aircraft went down over western Iraq.</p>
-<p>📖 <a href="https://www.bbc.com/news/articles/cy0dz5ql17vo?at_medium=RSS&at_campaign=rss" target="_blank">https://www.bbc.com/news/articles/cy0dz5ql17vo?at_medium=RSS&at_campaign=rss</a></p>
-<h3>4. 美以联合军事打击伊朗，德黑兰上空浓烟升起</h3>
-<p><strong>来源</strong>：BBC 中文  </p>
-<p>美国与以色列于 2 月 28 日联合对伊朗发动军事打击，目标包括最高领袖哈梅内伊和伊朗总统。</p>
-<p>📖 <a href="https://www.bbc.com/zhongwen/articles/cy57glv45lgo/simp" target="_blank">https://www.bbc.com/zhongwen/articles/cy57glv45lgo/simp</a></p>
-<h3>5. 伊朗多地爆发示威活动 当局实施通讯封锁</h3>
-<p><strong>来源</strong>：NCRI  </p>
-<p>伊朗多个城市爆发示威活动，从经济诉求演变为更广泛的政治要求。</p>
-<p>📖 <a href="https://www.ncr-iran.org/en/news/iran-news-in-brief-news/iran-news-in-brief-february-28-2026/" target="_blank">https://www.ncr-iran.org/en/news/iran-news-in-brief-news/iran-news-in-brief-february-28-2026/</a></p>
-<hr>
-<h2>🇨🇳 外电看中国</h2>
-<h3>1. UK’s Andrew and Peter Mandelson pictured in bathrobes with Jeffrey Epstein</h3>
-<p><strong>来源</strong>：SCMP 南华早报  </p>
-<p>2026.03.13 19:20An undated image shows Jeffrey Epstein (centre) sitting with Andrew Mountbatten-Windsor and Peter Mandelson. Photo: US Department of Justice via APFormer UK prince Andrew Mountbatten-Windsor and former British minister Peter Mandelson have been pictured in bathrobes alongside paedophile financier Jeffrey Epstein.The undated photograph has been unearthed as part of the US Departm...</p>
-<p>📖 <a href="https://www.scmp.com/news/world/europe/article/3346566/uks-andrew-and-peter-mandelson-pictured-bathrobes-jeffrey-epstein?utm_source=rss_feed" target="_blank">https://www.scmp.com/news/world/europe/article/3346566/uks-andrew-and-peter-mandelson-pictured-bathrobes-jeffrey-epstein?utm_source=rss_feed</a></p>
-<h3>2. Iran lets 2 India-flagged gas tankers sail through Strait of Hormuz, insiders say</h3>
-<p><strong>来源</strong>：SCMP 南华早报  </p>
-<p>2026.03.13 18:50The Liberia‑flagged tanker Shenlong, carrying crude oil from Saudi Arabia to India via the Strait of Hormuz, arrives at Mumbai on Thursday. Photo: EPAIran ⁠has allowed two Indian-flagged liquefied ⁠petroleum gas carriers to sail through the Strait of Hormuz, ⁠four sources with direct knowledge of the matter said, a rare exception to the Iranian blockade that has disrupted global...</p>
-<p>📖 <a href="https://www.scmp.com/news/world/middle-east/article/3346565/iran-lets-2-india-flagged-gas-tankers-sail-through-strait-hormuz-insiders-say?utm_source=rss_feed" target="_blank">https://www.scmp.com/news/world/middle-east/article/3346565/iran-lets-2-india-flagged-gas-tankers-sail-through-strait-hormuz-insiders-say?utm_source=rss_feed</a></p>
-<h3>3. 中国 2025 年统计公报发布 医疗卫生机构超 110 万个</h3>
-<p><strong>来源</strong>：国家统计局  </p>
-<p>国家统计局发布 2025 年国民经济和社会发展统计公报。</p>
-<p>📖 <a href="https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html" target="_blank">https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html</a></p>
-<h3>4. 中国经济持续复苏 科技产业成增长引擎</h3>
-<p><strong>来源</strong>：Asia Society  </p>
-<p>国际媒体关注中国经济在 2026 年初的复苏迹象。</p>
-<p>📖 <a href="https://asiasociety.org/policy-institute/china-5-february-27-2026" target="_blank">https://asiasociety.org/policy-institute/china-5-february-27-2026</a></p>
-<h3>5. 中国 AI 产业发展迅速 核心产业规模超万亿</h3>
-<p><strong>来源</strong>：AI Journal  </p>
-<p>中国 AI 产业在 2026 年持续发展。</p>
-<p>📖 <a href="https://aijourn.com/well-grounded-confidence-how-chinas-domestic-growth-drivers-propel-a-strong-start-to-its-15th-five-year-plan/" target="_blank">https://aijourn.com/well-grounded-confidence-how-chinas-domestic-growth-drivers-propel-a-strong-start-to-its-15th-five-year-plan/</a></p>
-<hr>
-<h2>💻 科技前沿</h2>
-<h3>1. 日本2月进口EV销量涨43%，比亚迪增至2.1倍</h3>
-<p><strong>来源</strong>：日经中文网  </p>
-<p>2026/03/13 比亚迪的PHV“海狮6” 日本汽车进口商协会（JAIA）公布的数据显示，2月日本的进口车销量（不包括日本厂商的汽车）同比减少6%，降至1万7505辆。纯电动汽车（EV）增长43%，达到2675辆，占进口车整体的15%。销售EV的中国比亚迪（BYD）和韩国现代汽车的销量增至约2倍。 日本的EV销量连续2个月增长。比亚迪在2月增至2.1倍，达到466辆。从1月底左右开始交车的插电式混合动力车（PHV）“海狮6”实现增长。 比亚迪的负责人表示“海狮6占整体销量的4成，表现相当出色。相对于价格，配置的充实感得到好评”。由于乘积效应，EV车型“海狮7”的销量也在增加。现代汽车的销量为90辆，增至2.3倍。</p>
-<p>📖 <a href="http://cn.nikkei.com/industry/icar/61766-2026-03-13-14-13-18.html?print=1" target="_blank">http://cn.nikkei.com/industry/icar/61766-2026-03-13-14-13-18.html?print=1</a></p>
-<h3>2. 机械硬盘价格连续4个季度上涨</h3>
-<p><strong>来源</strong>：日经中文网  </p>
-<p>2026/03/13 机械硬盘价格连续4个季度上涨（东京都千代田区的Dospara秋叶原本店） 个人电脑（PC）用机械硬盘（HDD）的价格正在持续上涨。1～3月大宗交易价格连续4个季度上涨。在中国，面向PC的需求持续强劲，同时硬盘厂商还在把生产转向数据中心用产品，导致供需变得紧张。市场上有很多观点认为目前价格很难下降。 主要机械硬盘厂商有希捷科技、西部数据、东芝的子公司东芝电子元件及存储装置。 1～3月，用于台式电脑和监控摄像头的3.5英寸1TB机械硬盘比上一季度上涨1%，达到53.5美元左右。用于笔记本电脑的2.5英寸1TB产品也上涨1%，为50.5美元左右。均连续4个季度价格上涨。 价格上涨的背景是，首先从2025年开始，中国来自PC的需求持续增加。日本电子商社的负责人表示，“搭载华为开发的鸿蒙系统的PC使用了机械硬盘”。 在往年，1～3月是面向年末商战的需求告一段落、按季度计算...</p>
-<p>📖 <a href="http://cn.nikkei.com/politicsaeconomy/commodity/61764-2026-03-13-12-54-30.html?print=1" target="_blank">http://cn.nikkei.com/politicsaeconomy/commodity/61764-2026-03-13-12-54-30.html?print=1</a></p>
-<h3>3. 三星 Galaxy S26 系列主打 AI 功能</h3>
-<p><strong>来源</strong>：Gizmodo  </p>
-<p>三星最新手机全面投入 AI 功能，耳塞回归基础设计。</p>
-<p>📖 <a href="https://gizmodo.com/best-gadgets-february-2026-2000727661" target="_blank">https://gizmodo.com/best-gadgets-february-2026-2000727661</a></p>
-<h3>4. 2026 年科技趋势：设备正变成智能伴侣</h3>
-<p><strong>来源</strong>：The Gadget Flow  </p>
-<p>智能设备从工具转变为日常伴侣。</p>
-<p>📖 <a href="https://thegadgetflow.com/blog/top-tech-trends/" target="_blank">https://thegadgetflow.com/blog/top-tech-trends/</a></p>
-<hr>
-<h2>🇨🇦 加拿大/埃德蒙顿本地</h2>
-<h3>1. 阿尔伯塔省发布 2026 年预算 赤字达 94 亿</h3>
-<p><strong>来源</strong>：Global News  </p>
-<p>省政府周四发布预算案，预计随后两年仍有高额赤字。</p>
-<p>📖 <a href="https://globalnews.ca/news/11709990/alberta-finance-minister-budget-calgary-chamber-of-commerce/" target="_blank">https://globalnews.ca/news/11709990/alberta-finance-minister-budget-calgary-chamber-of-commerce/</a></p>
-<h3>2. NDP 领袖 Nenshi 批评 UCP 政府财政管理</h3>
-<p><strong>来源</strong>：Edmonton Journal  </p>
-<p>反对党领袖称阿省财政在 NDP 时期管理更好。</p>
-<p>📖 <a href="https://edmontonjournal.com/" target="_blank">https://edmontonjournal.com/</a></p>
-<h3>3. 教育物业税上调引发讨论 卡尔加里市长表支持</h3>
-<p><strong>来源</strong>：Global News  </p>
-<p>教育物业税上调被市长称为良好投资。</p>
-<p>📖 <a href="https://globalnews.ca/news/11709072/calgary-mayor-2026-alberta-budget-reaction/" target="_blank">https://globalnews.ca/news/11709072/calgary-mayor-2026-alberta-budget-reaction/</a></p>
-<hr>
-<h2>🇨🇳 国内·社会·健康</h2>
-<h3>1. 天花板被泡后：面对邻里纠纷，真诚和沟通才能消除隔阂</h3>
-<p><strong>来源</strong>：南方周末  </p>
-<p>2026-03-13 23:00:00“你快回来看看，你家天花板被水泡了。”我妈在家发来信息，又紧跟了好几张客厅天花板斑驳破损的照片。我心里一紧，匆匆往家赶。 回来一看，天花板被泡的情况比照片还严重，墙面泛黄起渍，水珠正顺着缝隙滴滴答答往下滴，墙皮更是一片片翘边脱落。我妈说这是楼上漏水渗下来的，而楼上那边来看过一眼，只说要等三个月墙面完全干透，才能着手处理。 看着眼前一片狼藉，再听到“等三个月”这话，我心里顿时冒出一股无名火。我下意识地认为，这不过是对方为了拖延时间、不想负责的借口——毕竟三个月后，谁还记得这茬？ 这么一想，我决定跑上去问个究竟。因为不擅长沟通，更怕与人正面“交涉”，我内心演练了各种话术准备对峙，敲门前鼓足了勇气。住了这么久，我竟从来没有和这位邻居打过照面。 开门的是位与我父亲年龄相仿的老先生，不苟言笑，身形精瘦，戴着眼镜。我望了望四周，老先生无人作伴，卧室门口有一条...</p>
-<p>📖 <a href="http://www.infzm.com/contents/316514" target="_blank">http://www.infzm.com/contents/316514</a></p>
-<h3>2. 中国企业研发全景图：冷热交织，总量创新高</h3>
-<p><strong>来源</strong>：南方周末  </p>
-<p>2026-03-13 22:30:00前情提要—— 2025年度中国企业科创力TOP100是谁？ 五年研发增长七成，研发投入前100 强者恒强 TOP100引领增长，百人规模加速扩张 这100家企业最不吝研发，零盈利也敢拼 94万亿营收背后：中国企业的韧性与活力 2021年至2025年入库企业的研发投入呈现显著的持续增长态势。研发投入总和从2021年的15777.48亿元攀升至2025年的27089.46亿元，累计增幅超过四成，体现出企业整体对科技创新的重视程度不断提升。与此同时，研发投入平均值也从3.58亿元上升至4.60亿元，增长超过两成，反映出企业个体在研发能力上的普遍增强。 在披露研发投入的5915家企业中，超过半数在2024年增加了研发投入，显示出创新驱动正成为企业发展的主流趋势。其中，华为以1797亿元的研发投入断层领先，不仅是唯一一家迈入千亿级研发门槛的企业，其“自卷”...</p>
-<p>📖 <a href="http://www.infzm.com/contents/316886" target="_blank">http://www.infzm.com/contents/316886</a></p>
-<h3>3. 专家警示生酮饮食风险 减重后反弹案例增多</h3>
-<p><strong>来源</strong>：中时新闻网  </p>
-<p>营养专家提醒极端节食的健康风险。</p>
-<p>📖 <a href="https://www.chinatimes.com/health/" target="_blank">https://www.chinatimes.com/health/</a></p>
-<hr>
-<p class="footer">简报生成时间：2026-03-13 13:43 MST</p>
-<p class="footer">新闻来源：FeedX RSS + 人工精选</p>
+    <div class="header">
+        <h1>📰 新闻简报</h1>
+        <p class="date">2026-03-13 · 每日更新</p>
+    </div>
+<div class="section"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" class="section-image" alt=""><h2 class="section-title">🔴 国际头条</h2>
+<div class="article-card">
+<h3 class="article-title">中国两会政府工作报告看点：GDP目标下调传递诸多信号、军费增幅下降、对台措辞升级与缺席高官</h3>
+<div class="article-meta"><span class="tag">📌 BBC 中文</span></div>
+<p class="article-desc">在人大开幕现场。2026年3月5日在外部不确定性增加和内部面临结构转型压力的背景下，中国总理李强在2026年两会上交出了其任内的第三份政府工作报告。这份长达数千字的报告不仅定调了这一年的经济目标，更被视为中国在“十五五”开局之年的政策蓝图。报告中最引人瞩目的是将GDP增长目标设定为区间值，具体增长目标数字为1991年以来最低，并罕见地将财政赤字率维持在历史高位。此外，连续五年国防预算增幅不低于7%，对台论述中用词出现升级。穆迪分析总结认为，此次政府工作报告的整体信号是：中国正在为更为平稳但节奏趋缓的经济扩张做好准备。对于决策者而言，“可持续性”正在取代“速度”，成为增长管理的首要考量。增长目标三年来首次下调今年增速目标的下沿较前两年的“5%左右”有所下移。李强表示，目标设定要为“调结构、防风险、促改革留出空间”。李强表示，该目标与2035年远景目标“总体衔接”——中国官方规划届时人均...</p>
+<div class="article-source">🔗 <a href="https://www.bbc.com/zhongwen/articles/ce8wwj819e5o/simp#4" target="_blank">https://www.bbc.com/zhongwen/articles/ce8wwj819e5o/simp#4</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">中国的下一场增长赌局全力押注AI、机器人等“未来产业”</h3>
+<div class="article-meta"><span class="tag">📌 BBC 中文</span></div>
+<p class="article-desc">2026年3月9日中国总理李强在今年两会的政府工作报告中，再次把科技放在中国经济政策的重要位置。与以往不同的是，这次的表述不仅强调“科技创新”，还把一系列“未来产业”与人工智能（AI）一起，放进更靠近宏观政策中心的位置。观察者认为，科技正被赋予更直接的宏观任务：它既要帮助中国在外部技术竞争中争取主动，也要在内部经济转型中承担更多增长责任。“别无选择”的增长点政府工作报告里的科技议题并不是孤立章节，而是与就业、投资、产业竞争力以及中国未来的增长模式联系在一起。报告强调，要把中国发展经济的着力点放在实体经济上，建设现代化产业体系。包括推动传统产业技术改造和设备更新、发展智能制造、支援企业数字化转型，并通过标准提升推动产业升级。这背后的逻辑并不复杂。 过去多年，房地产曾是中国经济的重要引擎，但随着房地产对增长的拉动作用减弱，北京需要寻找新的、更可持续的增长来源。 在这一背景下，制造业升级、...</p>
+<div class="article-source">🔗 <a href="https://www.bbc.com/zhongwen/articles/cewz7yxrqdgo/simp#6" target="_blank">https://www.bbc.com/zhongwen/articles/cewz7yxrqdgo/simp#6</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">台湾行政院长卓荣泰“私人行程”赴日本观赛：外交突破与质疑声</h3>
+<div class="article-meta"><span class="tag">📌 BBC 中文</span></div>
+<p class="article-desc">2026年3月10日台湾行政院长卓荣泰上周六（3月7日）访问日本，在东京巨蛋观看台湾与捷克在“世界棒球经典赛”（WBC）的比赛。他是1972年台日断交以来首位踏上日本国土的现职行政院长，有学者对BBC中文分析，这标志着台日外交关系上的重大突破。不过卓荣泰此举也引起台湾内部的质疑声。他强调这次属于自费的“私人行程”，并非公务，但在野党质疑自费包机费用花了多少，要求公开详情。中方则批评日本违反“一个中国”原则。中国外交部副部长孙卫东当天深夜致电日本驻中大使抗议，日方则强调台湾问题立场不变。行程细节：松山空军机场的“私人包机”在日本东京举行。台湾的“中华队”在经历开赛连败后，上周六（7日）以14比0击败捷克，取得本届赛事首场胜利，而行政院长卓荣泰当时在现场观赛。据台湾媒体报道，卓荣泰当日清晨在松山机场空军松指部专机停机坪出发，飞往日本羽田机场，到东京巨蛋观赛，当晚约11点前抵台北。他在日本...</p>
+<div class="article-source">🔗 <a href="https://www.bbc.com/zhongwen/articles/cewzqzpp784o/simp#4" target="_blank">https://www.bbc.com/zhongwen/articles/cewzqzpp784o/simp#4</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">2026中国两会：北京如何定义未来五年？</h3>
+<div class="article-meta"><span class="tag">📌 BBC 中文</span></div>
+<p class="article-desc">你的器材不支持播放多媒体材料2026中国两会：北京如何定义未来五年？2026中国两会：北京如何定义未来五年？2026年3月4日一年一度的中国“两会”在北京拉开帷幕。尽管全国人大与政协会议不会做出实际决策，但其被视为观察中国政治经济走向的重要视窗。今年的会议不仅将涉及年度政治议程，更将启动中国新的五年规划。换言之，它既要回答“今年怎么办”，也要交代“未来五年怎么走”。BBC中文记者为你介绍今年中国“两会”的五个关注焦点。</p>
+<div class="article-source">🔗 <a href="https://www.bbc.com/zhongwen/articles/cj9882x0908o/simp#2" target="_blank">https://www.bbc.com/zhongwen/articles/cj9882x0908o/simp#2</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">巴西女性向BBC透露，爱泼斯坦曾利用模特儿经纪人招募女孩</h3>
+<div class="article-meta"><span class="tag">📌 BBC 中文</span></div>
+<p class="article-desc">2026年3月12日警告：本文包含露骨的性描写。“如果我不听母亲的话，而是去了纽约，会有什么发生呢？”格劳西亚·费凯特（Gláucia Fekete）问。2004年，16岁的她住在巴西乡村，开始涉足模特儿界。她说，法国模特儿经纪人让-吕克·布鲁内尔（Jean-Luc Brunel）曾到她家拜访，试图说服她的母亲，让她去厄瓜多尔参加模特儿比赛。布鲁内尔后来在狱中自杀，他被指控强奸、性侵，并为已故的美国金融家兼性犯罪者爱泼斯坦（Jeffrey Epstein）招募女孩。当时，她们并不知道布鲁内尔是谁；她们是透过一位著名的巴西星探认识的。BBC巴西语的一项调查发现，布鲁内尔利用当时与他有关联的模特儿经纪公司，积极地为爱泼斯坦在南美洲寻找年轻女性和女孩，并为她们安排前往美国的签证。另一位自称与爱泼斯坦有关系的巴西女子向BBC出示了她的美国签证。签证上显示，她的保证人是布鲁内尔旗下的一家经纪公...</p>
+<div class="article-source">🔗 <a href="https://www.bbc.com/zhongwen/articles/crrxv49x1z9o/simp#1" target="_blank">https://www.bbc.com/zhongwen/articles/crrxv49x1z9o/simp#1</a></div>
+</div>
+<div class="section"><img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&q=80" class="section-image" alt=""><h2 class="section-title">🇨🇳 外电看中国</h2>
+<div class="article-card">
+<h3 class="article-title">UK’s Andrew and Peter Mandelson pictured in bathrobes with Jeffrey Epstein</h3>
+<div class="article-meta"><span class="tag">📌 SCMP 南华早报</span></div>
+<p class="article-desc">2026.03.13 19:20An undated image shows Jeffrey Epstein (centre) sitting with Andrew Mountbatten-Windsor and Peter Mandelson. Photo: US Department of Justice via APFormer UK prince Andrew Mountbatten-Windsor and former British minister Peter Mandelson have been pictured in bathrobes alongside paedophile financier Jeffrey Epstein.The undated photograph has been unearthed as part of the US Departm...</p>
+<div class="article-source">🔗 <a href="https://www.scmp.com/news/world/europe/article/3346566/uks-andrew-and-peter-mandelson-pictured-bathrobes-jeffrey-epstein?utm_source=rss_feed" target="_blank">https://www.scmp.com/news/world/europe/article/3346566/uks-a...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">Iran lets 2 India-flagged gas tankers sail through Strait of Hormuz, insiders say</h3>
+<div class="article-meta"><span class="tag">📌 SCMP 南华早报</span></div>
+<p class="article-desc">2026.03.13 18:50The Liberia‑flagged tanker Shenlong, carrying crude oil from Saudi Arabia to India via the Strait of Hormuz, arrives at Mumbai on Thursday. Photo: EPAIran ⁠has allowed two Indian-flagged liquefied ⁠petroleum gas carriers to sail through the Strait of Hormuz, ⁠four sources with direct knowledge of the matter said, a rare exception to the Iranian blockade that has disrupted global...</p>
+<div class="article-source">🔗 <a href="https://www.scmp.com/news/world/middle-east/article/3346565/iran-lets-2-india-flagged-gas-tankers-sail-through-strait-hormuz-insiders-say?utm_source=rss_feed" target="_blank">https://www.scmp.com/news/world/middle-east/article/3346565/...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">Brazil’s Jair Bolsonaro in ICU with pneumonia</h3>
+<div class="article-meta"><span class="tag">📌 SCMP 南华早报</span></div>
+<p class="article-desc">2026.03.13 17:20Brazil’s former President Jair Bolsonaro attends a rally in Sao Paulo in June 2025. Photo: AFPBrazil’s former president Jair Bolsonaro has pneumonia and is receiving treatment in an intensive care unit, a hospital in the capital, Brasilia, said on Friday.Earlier in the day, Bolsonaro’s eldest son, Flavio, said on social media that his father was being transferred from prison to ...</p>
+<div class="article-source">🔗 <a href="https://www.scmp.com/news/world/americas/article/3346564/brazils-jair-bolsonaro-icu-pneumonia?utm_source=rss_feed" target="_blank">https://www.scmp.com/news/world/americas/article/3346564/bra...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">Singapore contests US claim of trade surplus amid excess capacity probe</h3>
+<div class="article-meta"><span class="tag">📌 SCMP 南华早报</span></div>
+<p class="article-desc">2026.03.13 16:20The Tanjong Pagar container terminal in Singapore. The city state said it will engage with the US to seek clarification on the trade figures. Photo: XinhuaSingapore said it ran a trade deficit with the US in 2024, disputing figures published by Washington that showed the city state posted a surplus and challenging suggestions that it is contributing to global manufacturing overc...</p>
+<div class="article-source">🔗 <a href="https://www.scmp.com/news/asia/southeast-asia/article/3346560/singapore-contests-us-claim-trade-surplus-amid-excess-capacity-probe?utm_source=rss_feed" target="_blank">https://www.scmp.com/news/asia/southeast-asia/article/334656...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">US says Iran’s new supreme leader likely ‘wounded’, dismisses Strait of Hormuz concerns</h3>
+<div class="article-meta"><span class="tag">📌 SCMP 南华早报</span></div>
+<p class="article-desc">2026.03.13 15:50Oil tankers sail near the Strait of Hormuz off Iran’s coast on Wednesday. Photo: ReutersUS Defence Secretary Pete Hegseth said on Friday that Iran’s new Supreme Leader Mojtaba Khamenei has been injured and pledged to continue ramping up attacks, while playing down the impact of the effective closure of the Strait of Hormuz.Khamenei is “wounded and likely disfigured”, Hegseth sai...</p>
+<div class="article-source">🔗 <a href="https://www.scmp.com/news/us/diplomacy/article/3346558/us-says-irans-new-supreme-leader-likely-wounded-dismisses-strait-hormuz-concerns?utm_source=rss_feed" target="_blank">https://www.scmp.com/news/us/diplomacy/article/3346558/us-sa...</a></div>
+</div>
+<div class="section"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" class="section-image" alt=""><h2 class="section-title">💻 科技前沿</h2>
+<div class="article-card">
+<h3 class="article-title">日本2月进口EV销量涨43%，比亚迪增至2.1倍</h3>
+<div class="article-meta"><span class="tag">📌 日经中文网</span></div>
+<p class="article-desc">2026/03/13 比亚迪的PHV“海狮6” 日本汽车进口商协会（JAIA）公布的数据显示，2月日本的进口车销量（不包括日本厂商的汽车）同比减少6%，降至1万7505辆。纯电动汽车（EV）增长43%，达到2675辆，占进口车整体的15%。销售EV的中国比亚迪（BYD）和韩国现代汽车的销量增至约2倍。 日本的EV销量连续2个月增长。比亚迪在2月增至2.1倍，达到466辆。从1月底左右开始交车的插电式混合动力车（PHV）“海狮6”实现增长。 比亚迪的负责人表示“海狮6占整体销量的4成，表现相当出色。相对于价格，配置的充实感得到好评”。由于乘积效应，EV车型“海狮7”的销量也在增加。现代汽车的销量为90辆，增至2.3倍。</p>
+<div class="article-source">🔗 <a href="http://cn.nikkei.com/industry/icar/61766-2026-03-13-14-13-18.html?print=1" target="_blank">http://cn.nikkei.com/industry/icar/61766-2026-03-13-14-13-18...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">机械硬盘价格连续4个季度上涨</h3>
+<div class="article-meta"><span class="tag">📌 日经中文网</span></div>
+<p class="article-desc">2026/03/13 机械硬盘价格连续4个季度上涨（东京都千代田区的Dospara秋叶原本店） 个人电脑（PC）用机械硬盘（HDD）的价格正在持续上涨。1～3月大宗交易价格连续4个季度上涨。在中国，面向PC的需求持续强劲，同时硬盘厂商还在把生产转向数据中心用产品，导致供需变得紧张。市场上有很多观点认为目前价格很难下降。 主要机械硬盘厂商有希捷科技、西部数据、东芝的子公司东芝电子元件及存储装置。 1～3月，用于台式电脑和监控摄像头的3.5英寸1TB机械硬盘比上一季度上涨1%，达到53.5美元左右。用于笔记本电脑的2.5英寸1TB产品也上涨1%，为50.5美元左右。均连续4个季度价格上涨。 价格上涨的背景是，首先从2025年开始，中国来自PC的需求持续增加。日本电子商社的负责人表示，“搭载华为开发的鸿蒙系统的PC使用了机械硬盘”。 在往年，1～3月是面向年末商战的需求告一段落、按季度计算...</p>
+<div class="article-source">🔗 <a href="http://cn.nikkei.com/politicsaeconomy/commodity/61764-2026-03-13-12-54-30.html?print=1" target="_blank">http://cn.nikkei.com/politicsaeconomy/commodity/61764-2026-0...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">比亚迪将在埼玉川越开设关东地区最大门店</h3>
+<div class="article-meta"><span class="tag">📌 日经中文网</span></div>
+<p class="article-desc">2026/03/13 “BYD AUTO川越”的示意图 3月12日，中国纯电动汽车（EV）制造商比亚迪（BYD）的日本法人发布消息称，将在埼玉县川越市开设关东地区面积规模最大的专卖店。这是一家店内最多可展示6辆车并附设维修工厂的大型门店。比亚迪将通过增开包括维修在内能够提供一条龙服务的门店，来获得更多顾客。 “BYD AUTO 川越”将于4月3日开业。店内将展示包括2025年12月上市的插电式混合动力车（PHV）“Sealion 6（海狮6）”在内的现行全部5款车型。4月3日至5日，还将展示预定于2026年夏季上市的日本专用纯电动轻型车“Racco（海獭）”。 在交车室，顾客可以体验将EV的电力供应给住宅的“Vehicle to Home（V2H，车到家）”功能。比亚迪将演示由车辆向处于断电状态的交车室供电的场景。 比亚迪正以在日本建立100家门店体制为目标，在各地不断开店。川越店将...</p>
+<div class="article-source">🔗 <a href="http://cn.nikkei.com/china/ccompany/61763-2026-03-13-11-21-00.html?print=1" target="_blank">http://cn.nikkei.com/china/ccompany/61763-2026-03-13-11-21-0...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">美国表示允许购买部分俄罗斯原油</h3>
+<div class="article-meta"><span class="tag">📌 日经中文网</span></div>
+<p class="article-desc">2026/03/13 美国财政部3月12日表示，将允许各国在大约一个月内购买目前正在海上运输中的俄罗斯原油及石油产品。此举是应对因攻击伊朗导致油价上涨的措施之一，将暂时放松对持续侵略乌克兰的俄罗斯所实施的制裁。 据认为，在伊朗遭攻击后滞留在海上的俄罗斯原油约有1.2亿桶，美国政府将优先推动这些原油重新进入市场流通。 美国财政部长贝森特12日在社交媒体上表示：“这项有限且短期的措施仅适用于运输中的原油，不会给俄罗斯政府带来重大的经济利益”。 特朗普政府3月5日也刚刚采取措施，允许印度在一个月内购买俄罗斯原油，此次进一步放松限制。</p>
+<div class="article-source">🔗 <a href="http://cn.nikkei.com/politicsaeconomy/commodity/61761-2026-03-13-08-06-18.html?print=1" target="_blank">http://cn.nikkei.com/politicsaeconomy/commodity/61761-2026-0...</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">中国游客减少，日本关西5家百货商场减收</h3>
+<div class="article-meta"><span class="tag">📌 日经中文网</span></div>
+<p class="article-desc">2026/03/13 高岛屋大阪店（大阪市中央区） 日本关西地区主要百货商场发布了2月的销售额（快报值），9家店中有5家低于上年同期。虽然2月有中华圈的春节长假，但受中日关系恶化影响，中国游客数量减少，对业绩造成了冲击。为弥补入境游客消费下滑的缺口，各家百货商场正在发力情人节商战，吸引日本国内顾客，从而抑制了营收降幅。 营收下滑的5家店铺为：阪急梅田总店（大阪市北区，同比下滑4.2%）、大丸梅田店（大阪市北区，下滑14.4%）、大丸心斋桥店（大阪市中央区，下滑8.2%）、高岛屋大阪店（大阪市中央区，下滑0.4%）、阿倍野HARUKAS近铁总店（大阪市阿倍野区，下滑4.4%）。大丸梅田店因为店内重新装修，部分卖场关闭也影响了业绩。 另一方面，阪神梅田总店（大阪市北区）因2025年大规模改装暂停的活动场地重新启用，举办了情人节活动与车站便当展销会，销售额大幅增长26.4%。 往年春节期间...</p>
+<div class="article-source">🔗 <a href="http://cn.nikkei.com/industry/tradingretail/61762-2026-03-13-10-55-10.html?print=1" target="_blank">http://cn.nikkei.com/industry/tradingretail/61762-2026-03-13...</a></div>
+</div>
+<div class="section"><img src="https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=80" class="section-image" alt=""><h2 class="section-title">🇨🇦 加拿大/埃德蒙顿本地</h2>
+<div class="section"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80" class="section-image" alt=""><h2 class="section-title">🏙️ 国内·社会</h2>
+<div class="article-card">
+<h3 class="article-title">嘉事堂：2025年归母净利润同比下降29.57%，拟10派1.15元</h3>
+<div class="article-meta"><span class="tag">📌 界面新闻</span></div>
+<p class="article-desc">2026.03.13 嘉事堂3月13日晚间公告，2025年实现营业收入195.25亿元，同比下降18.71%；归属于上市公司股东的净利润1.11亿元，同比下降29.57%；基本每股收益0.38元。公司拟向全体股东每10股派发现金红利1.15元（含税），送红股0股（含税），不以公积金转增股本。</p>
+<div class="article-source">🔗 <a href="https://m.jiemian.com/article/14112618.html" target="_blank">https://m.jiemian.com/article/14112618.html</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">锴威特：拟购买晶艺半导体控制权，股票停牌</h3>
+<div class="article-meta"><span class="tag">📌 界面新闻</span></div>
+<p class="article-desc">2026.03.13 锴威特3月13日晚间公告，公司正在筹划以发行股份及支付现金的方式购买晶艺半导体有限公司控制权并募集配套资金。经初步测算，本次交易可能构成《上市公司重大资产重组管理办法》规定的重大资产重组。根据《上海证券交易所科创板股票上市规则》相关法规，本次交易不会导致公司实际控制人发生变更，不构成重组上市。因本次交易尚存在不确定性，为了保证公平信息披露、维护投资者利益，避免对公司股价造成重大影响，根据上海证券交易所的相关规定，经公司申请，公司股票自2026年3月16日（星期一）开市起停牌，预计停牌时间不超过10个交易日。</p>
+<div class="article-source">🔗 <a href="https://m.jiemian.com/article/14112627.html" target="_blank">https://m.jiemian.com/article/14112627.html</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">现货白银日内跌超4%</h3>
+<div class="article-meta"><span class="tag">📌 界面新闻</span></div>
+<p class="article-desc">2026.03.13 3月13日，现货白银日内跌超4%，现报80.52美元/盎司。</p>
+<div class="article-source">🔗 <a href="https://m.jiemian.com/article/14112628.html" target="_blank">https://m.jiemian.com/article/14112628.html</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">伊朗30枚超重导弹袭击以色列</h3>
+<div class="article-meta"><span class="tag">📌 界面新闻</span></div>
+<p class="article-desc">2026.03.13 伊朗伊斯兰革命卫队空天军司令今天（3月13日）称，革命卫队向以色列特定目标发射了“30枚重达一两吨的超重型弹道导弹”。革命卫队称，此次行动“破坏并摧毁了以色列重要的空天监控系统——这是迄今为止针对以色列最猛烈的空袭行动，目前以色列的又一部分领空已在其控制之下”。（CCTV国际时讯）</p>
+<div class="article-source">🔗 <a href="https://m.jiemian.com/article/14112631.html" target="_blank">https://m.jiemian.com/article/14112631.html</a></div>
+</div>
+<div class="article-card">
+<h3 class="article-title">土交通部长证实一艘土耳其船获准通行霍尔木兹海峡</h3>
+<div class="article-meta"><span class="tag">📌 界面新闻</span></div>
+<p class="article-desc">2026.03.13 当地时间3月13日，土耳其交通和基础设施部长阿卜杜勒卡迪尔·乌拉尔奥卢证实，目前有14艘土耳其船只正在霍尔木兹海峡等待通行，另有一艘船只因涉及伊朗港口业务，经土方与伊朗当局沟通后已获准通行。 伊朗副外长拉万奇12日表示，伊朗允许部分国家的船只通过霍尔木兹海峡，但参与侵略伊朗的国家不享有霍尔木兹海峡的“安全通行权”。（央视新闻）</p>
+<div class="article-source">🔗 <a href="https://m.jiemian.com/article/14112635.html" target="_blank">https://m.jiemian.com/article/14112635.html</a></div>
+</div>
+
+    <div class="footer">
+        <p>由 Krowbat 自动生成 · <a href="https://github.com/krowbat/newsbriefs">GitHub</a></p>
+    </div>
 </body>
 </html>
