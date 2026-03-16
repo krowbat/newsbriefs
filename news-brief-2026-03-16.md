@@ -46,9 +46,9 @@ category: News Briefs
    - 美国财政部长贝森特与中国副总理何立峰在巴黎经合组织总部举行会谈。中国同时同意采购1200万吨2025年度美国大豆，并将在2026年度采购2500万吨。
    - https://www.reuters.com/world/china/us-china-economic-chiefs-meet-paris-clear-path-trump-xi-summit-2026-03-15/
 
-3. **华虹半导体7纳米芯片量产突破** (Reuters)
-   - 中国第二大芯片制造商华虹集团开发出可用于生产人工智能芯片的7纳米先进制造技术，四位知情人士透露，华为与华虹在该技术上进行合作。
-   - https://www.reuters.com/world/asia-pacific/chinas-no-2-chipmaker-readies-7-nm-production-beijing-ramps-up-self-suffiency-2026-03-16/
+3. **华虹半导体7纳米芯片量产突破** (新浪财经)
+   - 中国第二大芯片制造商华虹集团旗下华力微电子，已开发出可用于生产AI芯片的7纳米制程技术，计划今年底实现月产能数千片的初期目标。华为与华虹在该技术上进行合作。
+   - https://finance.sina.com.cn/stock/roll/2026-03-16/doc-inhrequs9900896.shtml
 
 4. **德语媒体：以"民族团结"之名 行"民族同化"之实** (德国之声)
    - 德国之声报道，中国全国人大即将通过"民族团结进步促进法"。《法兰克福汇报》称该法将进一步限制少数民族语言和文化权利，是习近平保障国家统一的武器。人权观察称这将为现有的压制行为提供合法性。
