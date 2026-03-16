@@ -105,6 +105,20 @@
             color: #ff4757;
             text-decoration: none;
         }
+        .article-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        .section-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
         .tldr {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #fff;
@@ -134,6 +148,11 @@
             color: #ff4757;
             text-decoration: none;
         }
+        hr {
+            border: none;
+            border-top: 1px dashed #eee;
+            margin: 30px 0;
+        }
         @media (max-width: 600px) {
             body { padding: 16px 12px 40px; }
             .section-title { font-size: 18px; }
@@ -146,10 +165,12 @@
         <h1>📰 新闻简报</h1>
         <p class="date">2026-03-16 · 每日更新</p>
     </div>
-<div class="tldr">
+
+    <div class="tldr">
         <h2>📌 今日要闻</h2>
         <p>今日看点：特朗普向北约和中国施压开放霍尔木兹海峡、欧洲国家拒绝特朗普霍尔木兹海峡请求、美军考虑冒险深入伊朗腹地、以色列继续袭击伊朗多地、国际能源署释放4亿桶原油储备</p>
-    </div><div class="section"><h2 class="section-title">🔴 国际头条</h2>
+    </div>
+<div class="section"><h2 class="section-title">🔴 国际头条</h2>
 <div class="article-card">
 <h3 class="article-title">特朗普向北约和中国施压开放霍尔木兹海峡</h3>
 <div class="article-meta"><span class="tag">📌 NY Times</span></div>
@@ -183,21 +204,21 @@
 <div class="section"><h2 class="section-title">🇨🇳 外电看中国（RSS源筛选）</h2>
 <div class="article-card">
 <h3 class="article-title">中美贸易谈判在巴黎举行</h3>
-<div class="article-meta"><span class="tag">📌 Reuters</span></div>
-<p class="article-desc">中美两国高级经济官员在巴黎举行新一轮贸易谈判，为特朗普与习近平的峰会铺平道路。谈判聚焦关税、稀土磁铁供应和高科技出口管制等问题。</p>
-<div class="article-source">⚠️ <span style="color:#999">来源有收费墙，请搜索替代链接</span></div>
+<div class="article-meta"><span class="tag">📌 Al Jazeera</span></div>
+<p class="article-desc">中美两国高级经济官员在巴黎举行新一轮贸易谈判，为特朗普与习近平的峰会铺平道路。美国财政部长贝森特会见中国副总理何立峰，谈判聚焦关税、稀土磁铁供应和高科技出口管制等问题。</p>
+<div class="article-source">🔗 <a href="https://www.aljazeera.com/news/2026/3/15/us-china-hold-trade-talks-in-paris-to-clear-path-to-trump-xi-summit" target="_blank">https://www.aljazeera.com/news/2026/3/15/us-china-hold-trade...</a></div>
 </div>
 <div class="article-card">
-<h3 class="article-title">贝森特领衔中美谈判 采购大量大豆</h3>
-<div class="article-meta"><span class="tag">📌 Reuters</span></div>
+<h3 class="article-title">贝森特领衔中美谈判 中国承诺大量采购大豆</h3>
+<div class="article-meta"><span class="tag">📌 CNBC</span></div>
 <p class="article-desc">美国财政部长贝森特与中国副总理何立峰在巴黎经合组织总部举行会谈。中国同时同意采购1200万吨2025年度美国大豆，并将在2026年度采购2500万吨。</p>
-<div class="article-source">⚠️ <span style="color:#999">来源有收费墙，请搜索替代链接</span></div>
+<div class="article-source">🔗 <a href="https://www.cnbc.com/2026/03/15/trump-xi-trade-talks.html" target="_blank">https://www.cnbc.com/2026/03/15/trump-xi-trade-talks.html</a></div>
 </div>
 <div class="article-card">
 <h3 class="article-title">华虹半导体7纳米芯片量产突破</h3>
-<div class="article-meta"><span class="tag">📌 新浪财经</span></div>
-<p class="article-desc">中国第二大芯片制造商华虹集团旗下华力微电子，已开发出可用于生产AI芯片的7纳米制程技术，计划今年底实现月产能数千片的初期目标。华为与华虹在该技术上进行合作。</p>
-<div class="article-source">🔗 <a href="https://finance.sina.com.cn/stock/roll/2026-03-16/doc-inhrequs9900896.shtml" target="_blank">https://finance.sina.com.cn/stock/roll/2026-03-16/doc-inhreq...</a></div>
+<div class="article-meta"><span class="tag">📌 Reuters</span></div>
+<p class="article-desc">中国第二大芯片制造商华虹集团开发出可用于生产人工智能芯片的7纳米先进制造技术，四位知情人士透露，华为与华虹在该技术上进行合作。</p>
+<div class="article-source">⚠️ <span style="color:#999">来源有收费墙，请搜索替代链接</span></div>
 </div>
 <div class="article-card">
 <h3 class="article-title">德语媒体：以"民族团结"之名 行"民族同化"之实</h3>
