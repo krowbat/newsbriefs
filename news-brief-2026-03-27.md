@@ -1,0 +1,167 @@
+<html><body>
+<div class="article-card"><h3>以色列对伊朗发动新一轮打击，战争进入第五周</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>阿联酋表态支持多国海军力量重新开放霍尔木兹海峡</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>特朗普将对伊朗重新开放霍尔木兹海峡的最后期限延长至4月6日</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>G7盟友在乌克兰和伊朗战争背景下开会，美国立场不可预测</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>特朗普下令机场安检费用由旅客支付，排队数小时问题待解</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>贸易战：特朗普关税大规模落地，美股震荡，中国宣布对美农产品加征关税</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>特朗普关税"核弹"：所有进口商品加税10%，中国税率增至54%</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>中国出口在关税压力下仍强劲增长</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>中国敦促美国在台湾问题上"保持谨慎"</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>香港修订《国家安全法》实施规则，游客需警惕</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>美国议员批评中国干预WTO会议，导致台湾被排除</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>香港需超越中国大陆人才以保持全球竞争力</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>中美贸易战分析：中国报复同时也希望对话</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>中国经济开年表现：起步有力 开局良好</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>就业形势总体稳定，城镇调查失业率同比持平</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>Anthropic承认测试"Mythos"新AI模型，代表"能力阶跃"</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>华虹7nm芯片量产：中国半导体重大突破</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>北京发布"量超智通"融合计算平台，突破算力瓶颈</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>人工智能赋能科学研究提速，AI for Science成全球科技创新核心赛道</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>追觅发布"芯际穿越"芯片品牌，2nm智驾芯片算力达2000TOPS</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>NHL积分榜：2026年3月27日</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>Ovechkin帽子戏法助首都队击败猛犸象</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>加拿大人队三连胜，Bolduc绝杀蓝衣队2-1</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>阿尔伯塔省推进跨省贸易协议</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>埃德蒙顿婚庆策划公司投诉激增，新人需警惕</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>阿尔伯塔省新民主党警告选区划分改革可能造成"杰利蝾螈"</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>埃德蒙顿性侵犯中心关注约会应用相关暴力案件增加</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>阿尔伯塔芭蕾舞团《天鹅湖》今晚在埃德蒙顿上演</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>2026年3月全国楼市呈现积极态势：去库存见效、房价企稳回升</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>年内各地优化公积金贷款政策超50条</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>美联储副主席预期美国经济今年将以2%左右速度扩张</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>美联储理事：资产负债表规模过大将扭曲市场</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+<div class="article-card"><h3>怀柔综合性国家科学中心发布8项突破性成果</h3>
+<div class="article-meta">META</div>
+<p class="article-desc">DESC</p>
+<div class="article-source">SRC</div>
+</div>
+</body></html>
