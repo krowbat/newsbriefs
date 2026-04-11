@@ -1,16 +1,6 @@
 {
   "version": 2,
-  "name": "dailynews-tts",
   "public": true,
   "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/*.mp3",
-      "headers": [
-        { "key": "Content-Type", "value": "audio/mpeg" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
-      ]
-    }
-  ]
+  "trailingSlash": false
 }
