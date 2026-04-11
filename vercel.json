@@ -2,5 +2,10 @@
   "version": 2,
   "public": true,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/today", "dest": "/news-brief-2026-04-11.html" },
+    { "src": "/today.html", "dest": "/news-brief-2026-04-11.html" },
+    { "src": "/", "dest": "/today.html" }
+  ]
 }
