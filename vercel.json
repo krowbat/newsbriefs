@@ -4,8 +4,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "routes": [
-    { "src": "/today", "dest": "/news-brief-2026-04-12.html" },
-    { "src": "/today.html", "dest": "/news-brief-2026-04-12.html" },
-    { "src": "/", "dest": "/today.html" }
+    { "src": "/today", "dest": "/index.html" },
+    { "src": "/today.html", "dest": "/index.html" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
